@@ -218,3 +218,13 @@ ul.child li a:after {
 
 .widget .widget__title {
   margin-top: 0; }
+
+.pagination {
+  border: none;
+  font-family: Dosis, Arial;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0; }
+
+.pagination .page.current {
+  color: #aacc5a; }
