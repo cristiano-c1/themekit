@@ -206,7 +206,7 @@ assets/tes-1.jpg:
 assets/tes-2.jpg:
   development: 2018-04-04T16:41:46+02:00   bd645720f08debc76d8ffc60bb3c1e2c
 assets/theme.css:
-  development: 2018-04-08T19:46:09+02:00   192dd6c80a14ff27f3930d73121e9f34
+  development: 2018-04-08T22:02:14+02:00   329491c6bf41a0f0ba1c1bab5bc5ffd0
 assets/theme.css.map:
   development: 2018-04-07T23:15:39+02:00   7ed9c78ba2bab83ca16ff9ed9d504f90
 assets/timber.js.liquid:
@@ -254,9 +254,9 @@ sections/section-brand.liquid:
 sections/section-categories.liquid:
   development: 2018-04-04T16:41:33+02:00   bbdc266513851c6a9d8b2fd0b063c6d3
 sections/section-collection-list.liquid:
-  development: 2018-04-04T16:41:33+02:00   05089a1134a2f7d67f739822fed0b9f6
+  development: 2018-04-08T21:40:35+02:00   9428a87245fc02416c38a701e0b775d1
 sections/section-collection.liquid:
-  development: 2018-04-04T16:41:33+02:00   43427b0ffdf7d9e3dad894b81fa71b14
+  development: 2018-04-08T21:33:33+02:00   e4727eb039a5382012aa35dbb22c59fc
 sections/section-contact.liquid:
   development: 2018-04-04T16:41:33+02:00   ca883a90f03e2c7a8afbb59f5eece321
 sections/section-product-featured.liquid:

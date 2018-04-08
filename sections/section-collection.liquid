@@ -16,11 +16,9 @@
 {% endcomment %}
  <header class="collection__info section-header">
 <!--         <h1 class="section-header__title">{{ collection.title }}</h1>
- -->        
+ -->
       {% if collection.image %}
-        <div class="collection__image">
-          <img src="{{ collection.image | img_url: 'master' }}" class="img-responsive" alt="{{collection.image}}">
-        </div>
+        <div class="collection__image" style="background-image: url({{ collection.image | img_url: 'master' }});"></div>
         {% endif %}
         <div class="rte rte--header space-10">
           {{ collection.description }}
@@ -29,7 +27,7 @@
 <div class="grid--rev">
   <div class="grid__item large--three-quarters collection-grid">
 
-     
+
 
       <div class="collection__sort section-header">
         <div class="section-header__right">
@@ -76,10 +74,10 @@
 
     </div>
 
-    
+
       <div class="pagination">
 {% if paginate.pages > 1 %}
-        {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}    
+        {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
     {% endif %}
  </div>
   </div>

@@ -90,6 +90,10 @@
 .site-header__topbar a:hover, .site-header__topbar .site-header__account ul li a:hover, .site-header__topbar .site-header__currency ul li a:hover {
   color: #999; }
 
+.breadcrumb .inner {
+  padding-top: 0;
+  height: auto; }
+
 .title-style:after,
 h2.title span:after,
 title.h2 span:after,
@@ -98,6 +102,9 @@ title.h2 span:after,
 
 h2.title, .title.h2 {
   margin-bottom: 40px; }
+
+.site-footer {
+  background: #d8d8d8; }
 
 .site-footer .site-footer__main h4, .site-footer .site-footer__main .h4 {
   font-weight: bold;
@@ -111,6 +118,12 @@ h2.title, .title.h2 {
 
 .site-footer .site-footer__bottom {
   border-color: #4b852c; }
+
+.site-footer .site-footer__top .newsletter .title {
+  font-family: Dosis, serif;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: bold; }
 
 .vertical-menu ul li {
   position: relative;
@@ -196,3 +209,12 @@ ul.child li a:after {
 
 .vertical-menu ul.children {
   border: none; }
+
+.collection__image {
+  min-height: 300px;
+  margin-top: 10px;
+  background-size: cover;
+  background-position: center center; }
+
+.widget .widget__title {
+  margin-top: 0; }

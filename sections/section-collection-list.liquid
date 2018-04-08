@@ -29,9 +29,7 @@
       <header class="collection__info section-header">
         <h1 class="section-header__title">{{ collection.title }}</h1>
         {% if collection.image %}
-        <div class="collection__image">
-          <img src="{{ collection.image | img_url: 'master' }}" class="img-responsive" alt="{{collection.image}}">
-        </div>
+        <div class="collection__image" style="background-image: url({{ collection.image | img_url: 'master' }});"></div>
         {% endif %}
         <div class="rte rte--header space-10">
           {{ collection.description }}

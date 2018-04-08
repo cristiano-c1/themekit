@@ -1,3 +1,7 @@
+.site-footer {
+  background: $gray-dust
+}
+
 .site-footer .site-footer__main h4, .site-footer .site-footer__main .h4 {
   font-weight: bold;
   margin-bottom: 40px;
@@ -21,4 +25,11 @@
 .site-footer .site-footer__main,
 .site-footer .site-footer__bottom {
   //background: #d5c0a3;
+}
+
+.site-footer .site-footer__top .newsletter .title {
+  font-family: Dosis, serif;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: bold
 }

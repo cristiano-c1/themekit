@@ -60,3 +60,7 @@
 .site-header__topbar a:hover,.site-header__topbar .site-header__account ul li a:hover, .site-header__topbar .site-header__currency ul li a:hover {
   color: $gray-silver
 }
+.breadcrumb .inner {
+  padding-top: 0;
+  height: auto;
+}
