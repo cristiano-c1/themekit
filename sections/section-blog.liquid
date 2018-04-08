@@ -1,0 +1,88 @@
+<!-- /templates/snippets/section-blog.liquid -->
+{% case section.settings.nb_column_blog %}
+  {% when '2' %}
+     {% capture grid_item_width %} large--one-half medium--one-half {% endcapture %}
+  {% when '3' %}
+     {% capture grid_item_width %} large--one-third medium--one-half {% endcapture %}
+  {% when '4' %}
+     {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+  {% else %}
+     {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+{% endcase %}
+{% assign blogs_home = blogs[section.settings.home_blogs_select].articles %}
+<div class="{% if template != 'index' %}wrapper{% endif %}">
+<div class="section-blog">
+<div class="latest-posts">
+    <h2 class="title section-header">{{section.settings.blog_title}}</h2>
+    <div class="owl-carousel-play">
+        <div class="latest-post-carousel owl-carousel owl-theme"  data-items="3" data-pagination="false" data-navigation="true" data-autoPlay="true">
+        {% for article in blogs_home limit: section.settings.nb_column_blog %}
+          <div class="latest-posts-body" style="background-image:url({{ article.image.src | img_url: 'original' }});">
+            <div class="post-thumbnail">
+              <a href="{{ article.url }}" ></a>
+                <div class="entry-meta">
+
+                  <div class="entry-content">
+                    <h4 class="entry-title">
+                      <a href="{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a>
+                    </h4>
+                    <div class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>{{article.published_at | date: "%B %d, %Y" }}</div>
+                    <p class="des small--hide">{{ article.content | strip_html | truncatewords: 15 }}</p>
+                    {% if section.settings.text_blog_button != blank %}
+                    <a href="{{ article.url }}" class="btn btn--secondary"> {{ section.settings.text_blog_button }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    {% endif %}
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+</div>
+</div>
+</div>
+{% schema %}
+    {
+    "name": "Latest Blog",
+    "settings": [
+    {
+        "type": "text",
+        "id": "nb_column_blog",
+        "label": "Grid item",
+        "default": "3",
+        "info": "ex:2,3,4,5,6"
+      },
+      {
+        "type": "blog",
+        "id": "home_blogs_select",
+        "label": "Blog",
+        "info": "Select blog"
+      },
+      {
+        "type": "text",
+        "id": "blog_title",
+        "label": "Latest Blog Title",
+        "default": "Our Blog"
+      },
+      {
+        "type": "text",
+        "id": "text_blog_button",
+        "label": "Text button",
+        "default": "See more"
+      }
+    ],
+  "presets": [
+        {
+          "name": "Blog",
+          "category": "News"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

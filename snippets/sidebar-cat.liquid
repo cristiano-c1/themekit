@@ -1,0 +1,46 @@
+<div class="vertical-menu grid__item  large--one-quarter  medium--one-whole">
+  <section class="shopify-section">
+  {% if settings.vertical-menu-enable %}
+  {% assign vertical_menu = settings.vertical-menu %}
+  <div class="vertical">
+    <div class="title">
+      {{ settings.vertical-menu-title }} <i class="fa fa-angle-down"></i>
+    </div>
+
+      <ul class="children">
+        {% for link in linklists[vertical_menu].links %}
+        <li class="clearfix">
+          <a class="accordion-link {% if link.links != blank %}accordion-link-short{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+          {% if link.links != blank %}<a href="#" class="icon-wrap accordion"><i class="fa fa-caret-right"></i></a>{% endif %}
+          {% if link.links != blank %}
+            <ul class="child container">
+              {% for child_link in link.links %}
+              <li><a href= "{{ child_link.url }}">{{ child_link.title }}</a>
+              {% if child_link.links != blank %}
+                <ul class="grandchild">
+                {% for grandchild_link in child_link.links %}
+                  <li><a href= "{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>
+                {% endfor %}
+                </ul>
+              {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+
+  </div>
+  {% endif %} <!-- end vertical -->
+  <script type="text/javascript">
+$(document).ready(function() {
+$('.accordion').accordion({
+cookieName: 'accordion_nav',
+speed: '500'
+});
+});
+</script>
+</section>
+</div>
+

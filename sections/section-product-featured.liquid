@@ -1,0 +1,118 @@
+{% assign products_per_row = section.settings.product_featured_num %}
+{% assign products_limit = section.settings.product_featured_limit %}
+{% assign title = section.settings.product_featured_title %}
+{% assign col = section.settings.product_featured_collection %}
+
+{% case section.settings.product_featured_num %}
+	{% when '2' %}
+		 {% capture grid_item_width %} large--one-half medium--one-half {% endcapture %}
+	{% when '3' %}
+		 {% capture grid_item_width %} large--one-third medium--one-half {% endcapture %}
+	{% when '4' %}
+		 {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+	{% when '5' %}
+		 {% capture grid_item_width %} large--one-fifth medium--one-half {% endcapture %}
+	{% when '6' %}
+		 {% capture grid_item_width %} large--one-sixth medium--one-half {% endcapture %}
+	{% else %}
+		 {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+{% endcase %}
+<div class="section-widget-products mb-60" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+<div class="{% if template != 'index' %}wrapper{% endif %}">
+  <div class="arrivals ">
+      <h2 class="title">{{title}}</h2>
+          <div class="grid grid-uniform">
+              {% for product in collections[col].products limit: products_limit %}
+                  <div class="grid__item {{ grid_item_width }}">
+                      {% include 'product-item' %}
+                  </div>
+              {%else%}
+                  {% include 'onboarding-empty-collection-list' %}
+              {% endfor %}
+          </div>
+  </div>
+</div>
+</div>
+{% schema %}
+    {
+    "name": "Product Featured",
+    "settings": [
+	  {
+        "type": "header",
+        "content": "Section Space"
+      },
+      {
+        "type": "text",
+        "id": "margin_top",
+        "label": "Margin Top",
+        "info": "Defined in pixels. Do not add the 'px' unit."
+      },
+      {
+        "type": "text",
+        "id": "margin_bottom",
+        "label": "Margin Bottom",
+        "info": "Defined in pixels. Do not add the 'px' unit."
+      },
+      {
+        "type": "header",
+        "content": "Settings"
+      },
+      {
+        "type": "text",
+        "id": "product_featured_title",
+        "label": "Title",
+        "default": "New Arrivals"
+      },
+      {
+        "type": "collection",
+        "id": "product_featured_collection",
+        "label": "Select collection"
+      },
+      {
+        "type": "select",
+        "id": "product_featured_num",
+        "label": "Number of products per row",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "product_featured_limit",
+        "label": "Limit product",
+        "default": "8"
+      }
+    ],
+	"presets": [
+        {
+          "name": "Products Featured",
+          "category": "Product"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

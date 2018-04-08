@@ -1,0 +1,352 @@
+//============================================
+// Global variables
+//============================================
+
+
+// Colors
+//============================================
+
+// 1. To prevent linting errors these
+//    values are stored in variables.
+
+$black:           #000; // 1.
+$white:           #fff; // 1.
+
+$primary:         #d9222a;
+$primary-mid:     #ab1a21;
+$primary-dark:    #620e12;
+
+$secondary:        #19262d;
+
+$beige:           #f9f8f1;
+
+$gray-powder:     #eee;
+$gray-dust:       #d8d8d8;
+$gray-silver:     #999;
+$gray-space:      #232323;
+
+$color-txt:       $gray-space;
+$color-bg:        $white;
+$color-error:     #ed331a;
+$color-success:   #2fa714;
+
+$bg-lightbox:     rgba(0, 0, 0, 0.8);
+
+
+// Dimensions
+//============================================
+
+$space:                     2.9rem;
+$space-quarter:             decimal-round($space * 0.25, 1);
+$space-third:               decimal-round($space / 3, 1);
+$space-half:                $space * 0.5;
+$space-twoThird:            decimal-round(($space / 3) * 2, 1);
+$space-threeQuarter:        decimal-round($space * 0.75, 1);
+$space-plusQuarter:         $space + $space-quarter;
+$space-plusThird:           $space + $space-third;
+$space-plusHalf:            $space + $space-half;
+$space-plusTwoThird:        $space + $space-twoThird;
+$space-plusThreeQuarter:    $space + $space-threeQuarter;
+$space-double:              $space * 2;
+$space-triple:              $space * 3;
+
+// Header Menu
+$header-menu-sublist-height:   80rem;
+
+
+// Motion
+//============================================
+
+$motion: 0.2s;
+
+
+// Z-index
+//============================================
+
+$z-mfp:         4000;
+$z-nav:         100;
+$z-nav-sub:     100;
+$z-footer-wave: 50;
+$z-nav-elem:    2;
+$z-nav-subelem: -1;
+$z-header-menu-dropdown:    200;
+
+
+// Typography
+//============================================
+
+$font:      "Museo Sans", "Helvetica Neue", Arial, sans-serif;
+$font-alt:  "Museo", "Helvetica Neue", Arial, sans-serif;
+$font-mono: monospace, monospace;
+$fs:        1.7rem;
+$fs-sm:     1.6rem;
+$fs-xs:     1.5rem;
+$lh:        ($space / $fs);
+
+$fs-h1: (
+  "": (2.5rem, 1.2),
+  "lg": (3.6rem, 1.15),
+);
+
+$fs-h2: (
+  "": (2.5rem, 1.2),
+);
+
+$fs-h3: (
+  "": (2.2rem, 1.2),
+  "lg": 2.5rem,
+);
+
+$fs-h4: (
+  "": (2.2rem, 1.3),
+);
+
+$fs-h5: (
+  "": (2.2rem, 1.2),
+  "sm": 1.7rem,
+  "lg": 2.2rem,
+);
+
+$fs-h6: (
+  "": (1.9rem, 1.3),
+);
+
+
+// Layout
+//============================================
+
+// XS
+$layout-gutter-xs: 1.8rem;
+$layout-width-xs:  41.6rem;
+
+// SM
+$layout-gutter-sm: 2rem;
+$layout-width-sm:  72.8rem;
+
+// MD
+$layout-gutter-md: 2.2rem;
+$layout-width-md:  96.6rem;
+
+// LG
+$layout-gutter-lg: 3rem;
+$layout-width-lg:  144rem;
+
+
+// Breakpoints
+//============================================
+
+// 1. Breakpoints are defined in em's, they are not affected by the
+//    reset on the html element. They use 16px (browser default)
+//    as a base for calculations. Keep in mind when creating new breakpoints.
+
+// 2. 1px in em (1 / 16 = 0.0625em) to create max-width queries.
+
+// 3. Full media query expresions for use in modules.
+
+$breakpoints: ( // 1.
+  "xs": em($layout-width-xs, 1.6rem),
+  "sm": em($layout-width-sm, 1.6rem),
+  "md": em($layout-width-md, 1.6rem),
+  "lg": em($layout-width-lg, 1.6rem),
+);
+
+$px-in-em: 0.0625em; // 2.
+
+$bp-xs:       "(min-width: #{map-get($breakpoints, 'xs')})"; // 3.
+$bp-sm:       "(min-width: #{map-get($breakpoints, 'sm')})"; // 3.
+$bp-md:       "(min-width: #{map-get($breakpoints, 'md')})"; // 3.
+$bp-lg:       "(min-width: #{map-get($breakpoints, 'lg')})"; // 3.
+
+$bp-xs-down:  "(max-width: #{map-get($breakpoints, 'xs') - $px-in-em})"; // 3.
+$bp-sm-down:  "(max-width: #{map-get($breakpoints, 'sm') - $px-in-em})"; // 3.
+$bp-md-down:  "(max-width: #{map-get($breakpoints, 'md') - $px-in-em})"; // 3.
+$bp-lg-down:  "(max-width: #{map-get($breakpoints, 'lg') - $px-in-em})"; // 3.
+
+
+// Dimensions - Magic Numbers!!
+//============================================
+
+// 1. Calculate height to even out browser differences,
+//    remember to update when changing the vertical
+//    padding & border on `.form_inputs` & `.btn`.
+
+// Inputs & Buttons
+$input-height: ($fs * $lh) + $space-half + 0.2rem; // 1.
+$btn-height: $input-height; // 1.
+
+// Header
+$header-height: 7rem;
+$header-height\sm: 9rem;
+$header-sublist-max-height: 80rem;
+
+// Typography
+$typography-img-width: 79.8rem;
+
+
+// Grid
+//============================================
+
+$grid-columns: 12;
+
+$grid-config-xs: (
+  "name": "",
+  "cols": $grid-columns,
+  "gutter": $layout-gutter-xs,
+  "bp": false,
+  "off": false,
+  "pull": false,
+  "push": false,
+  "clear": 2
+);
+
+$grid-config-sm: (
+  "name": "sm",
+  "cols": $grid-columns,
+  "gutter": $layout-gutter-sm,
+  "bp": $bp-sm,
+  "off": true,
+  "pull": true,
+  "push": true,
+  "clear": 2
+);
+
+$grid-config-md: (
+  "name": "md",
+  "cols": $grid-columns,
+  "gutter": $layout-gutter-md,
+  "bp": $bp-md,
+  "off": true,
+  "pull": true,
+  "push": true,
+  "clear": 2 3 4
+);
+
+$grid-config-lg: (
+  "name": "lg",
+  "cols": $grid-columns,
+  "gutter": $layout-gutter-lg,
+  "bp": $bp-lg,
+  "off": true,
+  "pull": true,
+  "push": true,
+  "clear": 3 4
+);
+
+// Grid sizes for print
+$grid-config-print: (
+  "name": "print",
+  "cols": $grid-columns,
+  "gutter": $layout-gutter-md,
+  "bp": "print",
+  "off": true,
+  "pull": true,
+  "push": true,
+  "clear": 2 3
+);
+
+
+// Dimension Utility
+//============================================
+
+$dimension-utility-sizes: (
+  "1":                  0.1rem,
+  "2":                  0.2rem,
+  "3":                  0.3rem,
+  "4":                  0.4rem,
+  "":                   $space,
+  "quarter":            $space-quarter,
+  "third":              $space-third,
+  "half":               $space-half,
+  "twoThird":           $space-twoThird,
+  "threeQuarter":       $space-threeQuarter,
+  "plusQuarter":        $space-plusQuarter,
+  "plusThird":          $space-plusThird,
+  "plusHalf":           $space-plusHalf,
+  "plusTwoThird":       $space-plusTwoThird,
+  "plusThreeQuarter":   $space-plusThreeQuarter,
+  "double":             $space-double,
+  "triple":             $space-triple,
+  "0": 0,
+);
+
+$dimension-utility-config-xs: (
+  "name": "",
+  "pull": true,
+  "push": true,
+  "padd": true,
+  "bp": false,
+
+  "sizes": $dimension-utility-sizes
+);
+
+$dimension-utility-config-sm: (
+  "name": "sm",
+  "pull": true,
+  "push": true,
+  "padd": true,
+  "bp": $bp-sm,
+
+  "sizes": $dimension-utility-sizes
+);
+
+$dimension-utility-config-md: (
+  "name": "md",
+  "pull": true,
+  "push": true,
+  "padd": true,
+  "bp": $bp-md,
+
+  "sizes": $dimension-utility-sizes
+);
+
+$dimension-utility-config-lg: (
+  "name": "lg",
+  "pull": true,
+  "push": true,
+  "padd": true,
+  "bp": $bp-lg,
+
+  "sizes": $dimension-utility-sizes
+);
+
+
+// Responsive gutter helper class
+$dimension-utility-gutter-config-xs: (
+  "name": "",
+  "pull": true,
+  "push": true,
+  "padd": false,
+  "bp": false,
+
+  "sizes": ("gutter": $layout-gutter-xs)
+);
+
+$dimension-utility-gutter-config-sm: (
+  "name": "",
+  "pull": true,
+  "push": true,
+  "padd": false,
+  "bp": $bp-sm,
+
+  "sizes": ("gutter": $layout-gutter-sm)
+);
+
+$dimension-utility-gutter-config-md: (
+  "name": "",
+  "pull": true,
+  "push": true,
+  "padd": false,
+  "bp": $bp-md,
+
+  "sizes": ("gutter": $layout-gutter-md)
+);
+
+$dimension-utility-gutter-config-lg: (
+  "name": "",
+  "pull": true,
+  "push": true,
+  "padd": false,
+  "bp": $bp-lg,
+
+  "sizes": ("gutter": $layout-gutter-lg)
+);

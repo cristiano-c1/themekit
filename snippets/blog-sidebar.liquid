@@ -1,0 +1,62 @@
+{% assign blog_limit = section.settings.blog_recent_limit %}
+<!-- /snippets/blog-sidebar.liquid -->
+{% if section.settings.recentblog_enable %}
+<div class="widget widget-blog-recent">
+<h4 class="widget__title">{{ 'blogs.sidebar.recent_articles' | t }}</h4>
+<div class="widget__content">
+  {% for article in blogs[blog.handle].articles limit: blog_limit %}
+    <div class="article">
+      <a href="{{ article.url }}">{{ article.title }}</a>
+      <br>
+      <em datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</em>
+    </div>
+  {% endfor %}
+</div>
+</div>
+{% endif %}
+
+{% if section.settings.tagsblog_enable %}
+<div class="widget widget-blog-tags">
+{% if blog.all_tags.size > 0 %}
+  <h4 class="widget__title">{{ 'blogs.sidebar.tags' | t }}</h4>
+  <div class="widget__content">
+  <ul class="menu">
+    {% for tag in blog.all_tags %}
+      {% if current_tags contains tag %}
+      <li>{{ tag }}</li>
+      {% else %}
+      <li>{{ tag | link_to_tag: tag }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  </div>
+{% endif %}
+</div>
+{% endif %}
+
+{% if section.settings.categoryblog_enable %}
+<div class="widget widget-category">
+  <h4 class="widget__title">{{'collections.sidebar.category'|t}}</h4>
+  <div class="widget__content">
+  <ul class="menu">
+    {% capture collection_title %}{{ collection.title }}{% endcapture %}
+    {% for collection in collections %}
+    <li {% if collection_title == collection.title %}class="filter--active" {% endif %}><a  href="{{ collection.url }}" title="{{ collection.title }}">{{ collection.title }} <span>({{collection.products_count}})</span></a></li>
+    {% endfor %}
+  </ul>
+  </div>
+</div><!-- end category sidebar -->
+{% endif %}
+
+{% if section.settings.ads_enable %}
+<div class="widget-ads widget">
+    <a href="{{block.section.settings.ads_block_url}}" class="{{block.section.settings.effect_hover_img}}">
+     {% if block.section.settings.ads_img == blank %}
+     {% capture _img_url %}ads_block.jpg{% endcapture %}
+     <img src="{{ _img_url | asset_url}}" alt="Banner Image">
+     {% else %}
+     <img src="{{ block.section.settings.ads_img | img_url:'master' }}" alt="Banner Image">
+     {% endif %}
+   </a>
+</div><!-- end advertising -->
+{% endif %}

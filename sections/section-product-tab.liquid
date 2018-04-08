@@ -1,0 +1,202 @@
+{% assign products_per_row = section.settings.tab_num %}
+{% assign products_limit = section.settings.tab_limit %}
+{% case products_per_row %}
+	{% when '2' %}
+		 {% capture grid_item_width %} large--one-half medium--one-half {% endcapture %}
+	{% when '3' %}
+		 {% capture grid_item_width %} large--one-third medium--one-half {% endcapture %}
+	{% when '4' %}
+		 {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+	{% when '5' %}
+		 {% capture grid_item_width %} large--one-fifth medium--one-half {% endcapture %}
+	{% when '6' %}
+		 {% capture grid_item_width %} large--one-sixth medium--one-half {% endcapture %}
+	{% else %}
+		 {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+{% endcase %}
+<div class="section-widget-products mb-60" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="wrapper">
+  <div class="section-tab-products space-40">
+          <div class="widget-tab-products ">
+
+              <div class="widget__content">
+              <h2 class="title large--left">
+                  <span class="myClass">{{ section.settings.tab_title }}</span>
+              </h2>
+                  <ul class="nav nav-tabs tabs-v1 large--right" role="tablist">
+                      {% for i in (1..4) %}
+                          {% capture k %}tab_collection_{{ i }}{% endcapture %}
+                          {% capture t %}tab_title_{{ i }}{% endcapture %}
+                          {% if section.settings[k] != blank %}
+                              <li role="presentation"><a href="#tab{{ i }}" aria-controls="tab{{ i }}" role="tab" data-toggle="tab">{{ section.settings[t] }}</a></li>
+                          {% endif %}
+                      {% endfor %}
+                  </ul>
+
+                  <div class="tab-content">
+                      {% for i in (1..4) %}
+                          {% capture c %}tab_collection_{{ i }}{% endcapture %}
+                          {% if section.settings[c] != blank %}
+                          <div role="tabpanel" class="tab-pane" id="tab{{ i }}">
+
+                              <div class="grid grid-uniform">
+                              {% for product in collections[section.settings[c]].products limit:  products_limit  %}
+                                  <div class="grid__item {{ grid_item_width }}">
+                                      {% include 'product-item' %}
+                                  </div>
+                              {% endfor %}
+                              </div>
+                          </div>
+                          {% endif %}
+                      {% endfor %}	
+                  </div>
+              </div>
+          </div>
+  </div>
+  </div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.nav-tabs li:first').addClass('active');
+		$('.tab-content .tab-pane:first').addClass('active');
+	});
+</script>
+
+
+{% schema %}
+  {
+    "name": "Product Tab",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Space"
+      },
+      {
+        "type": "text",
+        "id": "margin_top",
+        "label": "Margin Top",
+        "info": "Defined in pixels. Do not add the 'px' unit."
+      },
+      {
+        "type": "text",
+        "id": "margin_bottom",
+        "label": "Margin Bottom",
+        "info": "Defined in pixels. Do not add the 'px' unit."
+      },
+      {
+        "type": "header",
+        "content": "Settings"
+      },
+      {
+        "type": "text",
+        "id": "tab_title",
+        "label": "Tab Title"
+      },
+      {
+        "type": "select",
+        "id": "tab_num",
+        "label": "Number of products per row",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "tab_limit",
+        "label": "Limit product",
+        "default": "8"
+      },
+      {
+        "type": "header",
+        "content": "Tab 1"
+      },
+      {
+        "type": "text",
+        "id": "tab_title_1",
+        "label": "Title",
+        "default": "New Tab"
+      },
+      {
+        "type": "collection",
+        "id": "tab_collection_1",
+        "label": "Select collection"
+      },
+      {
+        "type": "header",
+        "content": "Tab 2"
+      },
+      {
+        "type": "text",
+        "id": "tab_title_2",
+        "label": "Title",
+        "default": "New Tab"
+      },
+      {
+        "type": "collection",
+        "id": "tab_collection_2",
+        "label": "Select collection"
+      },
+      {
+        "type": "header",
+        "content": "Tab 3"
+      },
+      {
+        "type": "text",
+        "id": "tab_title_3",
+        "label": "Title",
+        "default": "New Tab"
+      },
+      {
+        "type": "collection",
+        "id": "tab_collection_3",
+        "label": "Select collection"
+      },
+      {
+        "type": "header",
+        "content": "Tab 4"
+      },
+      {
+        "type": "text",
+        "id": "tab_title_4",
+        "label": "Title",
+        "default": "New Tab"
+      },
+      {
+        "type": "collection",
+        "id": "tab_collection_4",
+        "label": "Select collection"
+      }
+    ],
+    "presets": [
+        {
+          "name": "Products Tab",
+          "category": "Product"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,155 @@
+<!-- /templates/collection.list.liquid -->
+{% comment %}
+
+  By using a variation of the 'view all' parameter technique, you can create
+  a custom layout for any template by adding ?view=xxxx
+
+  In this example, you can have a list view of your collection page by going to
+  /collections/all?view=list
+
+  For more information on collection tags:
+    - http://docs.shopify.com/themes/liquid-variables/collection
+
+  For more information on the ?view parameter:
+    - http://docs.shopify.com/support/configuration/store-customization/can-i-show-more-than-50-products-on-my-homepage-can-i-add-a-view-all-function-to-my-collection-pages#add-view-all
+
+{% endcomment %}
+
+{% paginate collection.products by section.settings.nb_per_page %}
+
+
+
+
+{% comment %}
+  Use .grid--rev so that the collection tags appear below the products on mobile
+{% endcomment %}
+<div class="grid--rev">
+  <div class="grid__item large--three-quarters collection-list">
+
+      <header class="collection__info section-header">
+        <h1 class="section-header__title">{{ collection.title }}</h1>
+        {% if collection.image %}
+        <div class="collection__image">
+          <img src="{{ collection.image | img_url: 'master' }}" class="img-responsive" alt="{{collection.image}}">
+        </div>
+        {% endif %}
+        <div class="rte rte--header space-10">
+          {{ collection.description }}
+        </div>
+      </header>
+      <div class="collection__sort section-header">
+        <div class="section-header__right">
+          {% include 'collection-sorting' %}
+        </div>
+      </div>
+
+    <div class="grid-uniform">
+
+      <!-- begin product list output -->
+      {% for product in collection.products %}
+
+        {% assign on_sale = false %}
+        {% if product.compare_at_price > product.price %}
+          {% assign on_sale = true %}
+        {% endif %}
+
+        {% assign sold_out = true %}
+        {% if product.available %}
+          {% assign sold_out = false %}
+        {% endif %}
+
+        <div class="grid__item">
+          <div class="grid large--display-table">
+            <div class="grid__item large--two-eighths large--display-table-cell medium--one-third">
+              <a href="{{ product.url | within: collection }}">
+                <img src="{{ product.featured_image.src | img_url: 'medium' }}" alt="{{ product.featured_image.alt | escape }}" class="grid__image">
+              </a>
+            </div>
+            <div class="grid__item large--six-eighths large--display-table-cell medium--two-thirds">
+
+                  <p class="h6">{{ product.title }}</p>
+
+                  <div class="product-price">
+                    {% if on_sale %}
+                      {% if product.price_varies %}
+                        {% assign sale_price = product.price | money %}
+                        {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+                      {% else %}
+                        <strong>{{ 'products.product.on_sale' | t }}</strong>
+                        {{ product.price | money }}
+                      {% endif %}
+                    {% else %}
+                      {% if product.price_varies %}
+                        {% assign price = product.price | money %}
+                        {{ 'products.general.from_text_html' | t: price: price }}
+                      {% else %}
+                        {{ product.price | money }}
+                      {% endif %}
+                    {% endif %}
+                    {% if sold_out %}
+                      <br><strong>{{ 'products.product.sold_out' | t }}</strong>
+                    {% endif %}
+                    {% if on_sale %}
+                      <br><span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span><s>{{ product.compare_at_price | money }}</s>
+                    {% endif %}
+                  </div>
+
+                  <div class="rte">
+                    <p>{{ product.content | strip_html | truncatewords: 40 }}</p>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+
+      {% else %}
+
+        <div class="grid__item">
+          <p>{{ 'collections.general.no_matches' | t }}</p>
+        </div>
+
+      {% endfor %}
+      <!-- //product list output -->
+
+    </div>
+
+    {% if paginate.pages > 1 %}
+      <div class="pagination">
+        {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+      </div>
+    {% endif %}
+
+  </div>
+
+  <div class="sidebar grid__item large--one-quarter">
+    {% include 'collection-sidebar' %}
+  </div>
+</div>
+
+{% endpaginate %}
+
+{% schema %}
+{
+    "name": "Collection page",
+    "settings": [
+      {
+        "type": "text",
+        "id": "nb_per_page",
+        "label": "Number Product Per Page",
+        "default": "12"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_show_swatch",
+        "label": "Show product swatch ",
+        "default": false
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

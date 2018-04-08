@@ -1,0 +1,62 @@
+.site-header {
+  margin-bottom: 20px
+}
+
+.site-header__logo,
+.site-header__search,
+.site-header__car {
+  padding: 0
+}
+
+@media screen and (max-width: 480px){
+  .site-header__logo {
+      padding: 20px 0;
+  }
+}
+.site-header__logo {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.site-infos {
+  color: $black;
+  font-size: 13px;
+  font-family: 'Dosis', sans-serif;
+  padding-bottom: 30px;
+}
+
+.site-infos span{
+  font-size: 15px;
+  font-weight: bold;
+  display: block
+}
+
+
+.site-infos img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.site-infos__details {
+  overflow: hidden
+}
+
+.site-header__search,
+.site-header__car {
+  padding: 30px 0;
+}
+
+
+.site-header__topbar a,
+.site-header__topbar,
+.site-header__topbar .site-header__account i, .site-header__topbar .site-header__currency i,
+.site-header__topbar .site-header__account, .site-header__topbar .site-header__currency,
+.site-header__topbar .site-header__account ul li a, .site-header__topbar .site-header__currency ul li a {
+  color: $black;
+  cursor: pointer
+}
+
+.site-header__topbar a:hover,.site-header__topbar .site-header__account ul li a:hover, .site-header__topbar .site-header__currency ul li a:hover {
+  color: $gray-silver
+}

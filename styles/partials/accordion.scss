@@ -1,0 +1,86 @@
+.vertical-menu ul li {
+  position: relative;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.vertical-menu .vertical {
+    position: relative;
+    border: 2px solid #e5e5e5;
+}
+
+.vertical-menu ul li a.accordion-link {
+  float: left;
+  width: auto;
+  position: static;
+}
+.vertical-menu ul li a.accordion-link-short {
+  max-width:80%
+}
+
+.accordion {
+  float: right;
+  transition: all $motion  !important;
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+.accordion-open {
+  transform: rotate(90deg);
+
+}
+
+.child.container {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  display:none;
+}
+.icon-wrap {
+
+  padding: 0px 10px 0px 10px;
+  display: block;
+  cursor: pointer;
+  &:after {
+    display:none !important
+  }
+}
+.icon-wrap .fa{
+  color: $primary
+}
+.vertical-menu ul li {
+  padding: 10px 0
+}
+.vertical-menu ul li a {
+  line-height: 22px;
+  width: auto;
+}
+.vertical-menu ul li a {
+  transition: color $motion;
+  &:hover {
+    color: $primary
+  }
+}
+
+.vertical-menu ul li ul.child li{
+  margin: 0 10px
+}
+ul.child li a{
+  width: 100%;
+}
+
+ul.child li a:after {
+    background: #f5f5f5;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+ul.child li a:after {
+  top: -10px;
+}
+.vertical-menu ul li:first-child a:after{display:block}
+
+.vertical-menu ul li .child li:first-child a:after{display:none}

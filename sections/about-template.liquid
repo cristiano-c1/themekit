@@ -1,0 +1,87 @@
+<!-- PAGE TITLE -->
+<div class="about">
+  <div class="about__content">
+    <div class="space-40">
+      <div class="grid">
+        <div class="grid__item space-40">
+          <h2>{{section.settings.about2_title}}</h2>
+          <p class="about__desc">{{section.settings.about2_content}}</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__item large--two-quarters medium--two-quarters small--one-whole">
+          <div class="about__item">
+            <h4>{{section.settings.about3_title}}</h4>
+            <div class="about__desc">
+              {{section.settings.about3_content}}
+            </div>
+          </div>
+        </div>
+        <div class="grid__item large--two-quarters medium--two-quarters small--one-whole">
+          <div class="about__item">
+            <h4>{{section.settings.about4_title}}</h4>
+            <div class="about__desc">
+              {{section.settings.about4_content}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "About Us",
+  "class": "index-section",
+  "settings": [
+ 
+    {
+      "type": "header",
+      "content": "About"
+    },   
+    {
+      "type": "text",
+      "id": "about2_title",
+      "label": "Title 1",
+      "default": "About"
+    },
+    {
+      "type": "textarea",
+      "id": "about2_content",
+      "label": "Content 1",
+      "default": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "type": "text",
+      "id": "about3_title",
+      "label": "Title 2",
+      "default": "Vision"
+    },
+    {
+      "type": "textarea",
+      "id": "about3_content",
+      "label": "Content 2",
+      "default": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "type": "text",
+      "id": "about4_title",
+      "label": "Title 3",
+      "default": "Mission"
+    },
+    {
+      "type": "textarea",
+      "id": "about4_content",
+      "label": "Content 3",
+      "default": "This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet..."
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

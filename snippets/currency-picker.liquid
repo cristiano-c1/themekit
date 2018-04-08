@@ -1,0 +1,7 @@
+
+<ul id="currencies">
+	{% assign supported = settings.supported_currencies | split: ' ' %}
+	{% for c in supported %}
+		<li><span data-currency="{{c}}">{{c}}</span></li>
+	{% endfor %}
+</ul>

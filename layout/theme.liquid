@@ -1,0 +1,341 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {% if settings.favicon_enable %}
+  <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
+  {% endif %}
+
+  <!-- Title and description ================================================== -->
+  <title>
+  {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+  </title>
+
+  {% if page_description %}
+  <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  <!-- Helpers ================================================== -->
+  {% include 'social-meta-tags' %}
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_primary }}">
+  <!-- font -->
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Dosis:400,600,700,800,500,300' rel='stylesheet' type='text/css'>
+  <!-- CSS ================================================== -->
+  {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+  {{ 'font-awesome.css' | asset_url | stylesheet_tag }}
+  {{ 'elements.css' | asset_url | stylesheet_tag }}
+  {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'style.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'owl.carousel.css' | asset_url | stylesheet_tag }}
+  {{ 'owl.theme.css' | asset_url | stylesheet_tag }}
+  {{ 'owl.transitions.css' | asset_url | stylesheet_tag }}
+  {{ 'jquery.fancybox.css' | asset_url | stylesheet_tag }}
+  {{ 'animate.css' | asset_url | stylesheet_tag }}
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  <!-- Header hook for plugins ================================================== -->
+  {{ content_for_header }}
+  {% include 'oldIE-js' %}
+
+  {{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
+  {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
+  {{ 'modernizr.min.js' | asset_url | script_tag }}
+  {{ 'bootstrap-custom.js' | asset_url | script_tag }}
+  {{ 'plugins.min.js' | asset_url | script_tag }}
+  {{ 'option_selection.js' | shopify_asset_url | script_tag }}
+  {{ 'jquery.fancybox.js' | asset_url | script_tag }}
+  {{ 'jquery.jcarousellite.js' | asset_url | script_tag }}
+  {{ 'jquery_accordion.js' | asset_url | script_tag }}
+<script>
+  window.ajax_cart = true;
+  window.money_format = '{{shop.money_with_currency_format}}';
+  window.shop_currency = '{{ shop.currency }}';
+  window.show_multiple_currencies = true;
+  window.loading_url = "{{ 'loader-2.gif' | asset_url}}";
+  window.use_color_swatch = true;
+  window.product_image_resize = true;
+  window.enable_sidebar_multiple_choice = true;
+
+  window.file_url = "{{''|file_url}}";
+  window.asset_url = "{{''|asset_url}}";
+  window.images_size = {
+    is_crop: true,
+    ratio_width : 1,
+    ratio_height : 1,
+  };
+  window.inventory_text = {
+    in_stock: "{{ 'products.product.in_stock' | t }}",
+    many_in_stock: "{{ 'products.product.many_in_stock' | t }}",
+    out_of_stock: "{{ 'products.product.out_of_stock' | t }}",
+    add_to_cart: "{{ 'products.product.add_to_cart' | t }}",
+    sold_out: "{{ 'products.product.sold_out' | t }}",
+    unavailable: "{{ 'products.product.unavailable' | t }}"
+  };
+
+  window.sidebar_toggle = {
+    show_sidebar_toggle: "{{ 'general.sidebar_toggle.show_sidebar_toggle' | t }}",
+    hide_sidebar_toggle: "{{ 'general.sidebar_toggle.hide_sidebar_toggle' | t }}"
+  };
+
+</script>
+
+  {% comment %}
+    If you store has customer accounts disabled, you can remove the following JS file
+  {% endcomment %}
+  {% if template contains 'customers' %}
+    {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+  {% endif %}
+
+</head>
+
+{% comment %}
+  Add the page template as a class for easy page or template specific styling.
+{% endcomment %}
+<body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
+
+  <div id="NavDrawer" class="drawer drawer--left">
+    <div class="drawer__header">
+      <div class="drawer__title h3">{{ 'layout.drawers.browse' | t }}</div>
+      <div class="drawer__close js-drawer-close">
+        <button type="button" class="icon-fallback-text">
+          <span class="icon icon-x" aria-hidden="true"></span>
+          <span class="fallback-text">{{ 'layout.drawers.close_menu' | t }}</span>
+        </button>
+      </div>
+    </div>
+    <!-- begin mobile-nav -->
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item mobile-nav__search">
+        {% include 'search-bar' %}
+      </li>
+      {% for link in linklists.main-menu.links %}
+        {% assign item = link.title | downcase %}
+        {% assign child_list_handle = link.title | handleize %}
+        {% if linklists[child_list_handle].links != blank %}
+          <li class="mobile-nav__item{% if link.active %} mobile-nav__item--active{% endif %}" aria-haspopup="true">
+            <div class="mobile-nav__has-sublist">
+              <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+              <div class="mobile-nav__toggle">
+                <button type="button" class="icon-fallback-text mobile-nav__toggle-open">
+                  <span class="icon icon-plus" aria-hidden="true"></span>
+                  <span class="fallback-text">See More</span>
+                </button>
+                <button type="button" class="icon-fallback-text mobile-nav__toggle-close">
+                  <span class="icon icon-minus" aria-hidden="true"></span>
+                  <span class="fallback-text">{{ 'cart.general.close_cart' | t | json }}</span>
+                </button>
+              </div>
+            </div>
+            <ul class="mobile-nav__sublist">
+              {% for childlink in linklists[child_list_handle].links %}
+                <li class="mobile-nav__item {% if childlink.active %} mobile-nav__item--active{% endif %}">
+                  <a href="{{ childlink.url }}" class="mobile-nav__link">{{ childlink.title | escape }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          {% capture megamenu_1 %}megamenu_1_parent{% endcapture %}
+          {% capture megamenu_2 %}megamenu_2_parent{% endcapture %}
+          {% capture megamenu_3 %}megamenu_3_parent{% endcapture %}
+
+          {% if settings[megamenu_1] == item or settings[megamenu_2] == item  or settings[megamenu_3] == item %}
+              {% for i in (1..3) %}
+                  {%capture megamenu%}megamenu_{{i}}_parent{%endcapture%}
+                  {% if settings[megamenu] == item %}
+                      <li class="mobile-nav__item{% if link.active %} mobile-nav__item--active{% endif %}" aria-haspopup="true">
+
+                          <div class="mobile-nav__has-sublist">
+                              <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+                              <div class="mobile-nav__toggle">
+                                <button type="button" class="icon-fallback-text mobile-nav__toggle-open">
+                                  <span class="icon icon-plus" aria-hidden="true"></span>
+                                  <span class="fallback-text">See More</span>
+                                </button>
+                                <button type="button" class="icon-fallback-text mobile-nav__toggle-close">
+                                  <span class="icon icon-minus" aria-hidden="true"></span>
+                                  <span class="fallback-text">{{ 'cart.general.close_cart' | t | json }}</span>
+                                </button>
+                              </div>
+                            </div>
+                          <ul class="mobile-nav__sublist">
+                              <li class="awemenu-megamenu-item">
+                                  <div class="grid">
+                                  {% for j in (1..4) %}
+                                      {% capture mega_title %}megamenu_{{ i }}_column_{{ j }}_title{% endcapture %}
+                                      {% capture mega_col %}megamenu_{{ i }}_column_{{ j }}_menu{% endcapture %}
+
+                                      <div class="grid__item large--one-fifth">
+                                          <h3>{{ settings[mega_title] }}</h3>
+                                          <ul class="super">
+                                              {% for link in linklists[settings[mega_col]].links %}
+                                              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                                              {% endfor %}
+                                          </ul>
+                                      </div>
+                                  {% endfor %}
+                                  </div>
+                              </li>
+                          </ul>
+                      </li>
+                  {% endif %}
+              {% endfor %}
+          {% else %}
+              <li class="mobile-nav__item{% if link.active %} mobile-nav__item--active{% endif %}">
+                <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+              </li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% comment %}
+        If customer accounts are enabled, provide login and create account links
+      {% endcomment %}
+      {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+          <li class="mobile-nav__item">
+            {% if customer.first_name != blank %}
+              {% capture first_name %}{{ customer.first_name }}{% endcapture %}
+              <a href="/account">{{ 'layout.customer.logged_in_as_html' | t: first_name: first_name }}</a>
+            {% else %}
+              <a href="/account">{{ 'layout.customer.account' | t }}</a>
+            {% endif %}
+          </li>
+          <li class="mobile-nav__item">
+            {{ 'layout.customer.log_out' | t | customer_logout_link }}
+          </li>
+        {% else %}
+          <li class="mobile-nav__item">
+            {{ 'layout.customer.log_in' | t | customer_login_link }}
+          </li>
+          {% if shop.customer_accounts_optional %}
+          <li class="mobile-nav__item">
+            {{ 'layout.customer.create_account' | t | customer_register_link }}
+          </li>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    </ul>
+    <!-- //mobile-nav -->
+  </div>
+
+  <div id="CartDrawer" class="drawer drawer--right">  <div class="overlay"></div>
+    <div class="drawer--popup-container">
+      <div class="drawer__header">
+        <div class="drawer__title h3">{{ 'cart.general.title' | t }}</div>
+        <div class="drawer__close js-drawer-close">
+          <button type="button" class="icon-fallback-text">
+            <span class="icon icon-x" aria-hidden="true"></span>
+            <span class="fallback-text">{{ 'cart.general.close_cart' | t | json }}</span>
+          </button>
+        </div>
+      </div>
+      <div id="CartContainer"></div>
+    </div>
+  </div>
+
+  <div id="PageContainer" class="is-moved-by-drawer">
+  <div class="">
+    <header class="site-header">
+
+        <div class="wrapper">
+          <div class="inner">
+            {% section 'header' %}
+          </div>
+          <nav class="nav-bar bgFull {% if settings.keep_header %}keep-this{% endif %}" >
+                  {% include 'menu' %}
+            </nav>
+        </div>
+      </header> <!-- end header -->
+
+      <main class="wrapper main-content {% if template == 'index' %}wrapper-index{% endif %}" >
+        {% if template != 'index' %}
+          {% include 'breadcrumb' %}
+          {{ content_for_layout }}
+        {% else %}
+          <div class="grid">
+            {% include 'sidebar-cat' %}
+            <div class="grid__item  large--three-quarters  medium--one-whole">
+            {{ content_for_layout }}
+            </div>
+          </div>
+        {% endif %}
+      </main>
+
+      <!-- begin site-footer -->
+      <footer class="site-footer ">
+        <div class="inner">
+          {% section 'footer' %}
+        </div>
+      </footer>
+      <!-- //site-footer -->
+    </div>
+  </div>
+  {{ 'fastclick.min.js' | asset_url | script_tag }}
+  {{ 'timber.js' | asset_url | script_tag }}
+  {{ 'owl.carousel.min.js' | asset_url | script_tag }}
+  {{ 'wow.min.js' | asset_url | script_tag }}
+  <script>
+   new WOW().init();
+  </script>
+
+
+  {% comment %}
+    Template-specific js
+  {% endcomment %}
+  <script>
+    {% if resetPassword %}
+      $(function() {
+        timber.resetPasswordSuccess();
+      });
+    {% endif %}
+  </script>
+
+  {% if settings.ajax_cart_method == "drawer" %}
+    {{ 'handlebars.min.js' | asset_url | script_tag }}
+    {% include 'ajax-cart-template' %}
+    {{ 'ajax-cart.js' | asset_url | script_tag }}
+    <script>
+      var ajaxCartConfig = {
+          cartContainer: '#CartContainer',
+          addToCartSelector: 'button',
+          cartCountSelector: '#CartCount',
+          cartCostSelector: '#CartCost',
+          moneyFormat: {{ shop.money_format | json }}
+        };
+      jQuery(function($) {
+        ajaxCart.init(ajaxCartConfig);
+      });
+
+      jQuery('body').on('ajaxCart.afterCartLoad', function(evt, cart) {
+        // Bind to 'ajaxCart.afterCartLoad' to run any javascript after the cart has loaded in the DOM
+           timber.RightDrawer.open();
+      });
+    </script>
+  {% endif %}
+{% include 'currencies' %}
+
+
+  {{ 'quickview.js' | asset_url | script_tag }}
+  {{ 'wish-list.js' | asset_url | script_tag }}
+   {{ 'collection.js' | asset_url | script_tag }}
+
+  {% include 'product-quick-view' %}
+  {% include 'template-popup' %}
+  {% if settings.popup_newsletter_enable %}
+    {% include 'popup-newsletter' %}
+  {% endif %}
+  {% if settings.enable_auto_search %}
+   {% include 'search-autocomplete' %}
+   {% endif %}
+
+</body>
+</html>

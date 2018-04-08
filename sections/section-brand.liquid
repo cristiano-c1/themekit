@@ -1,0 +1,97 @@
+{% assign grid_item = section.settings.brand_grid_item %}
+<div class="section-widget-products" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+<h2 class="title">I nostri marchi</h2>
+<div class="{% if template != 'index' %}wrapper{% endif %}">
+	<div class="brands-carousel owl-carousel owl-theme " id="brands-carousel" data-items="{{grid_item}}" data-pagination="false" data-navigation="true" data-autoPlay="false">
+		{% for block in section.blocks %}
+        <div class="logo-bar__item{% if section.settings.title_enable %} logo-bar__item--large{% endif %}" {{ block.shopify_attributes }}>
+          {% if block.settings.link != blank %}
+            <a href="{{ block.settings.link }}" class="logo-bar__link">
+          {% endif %}
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | img_url: '160x160' | img_tag: block.settings.image.alt , 'logo-bar__image' }}
+          {% else %}
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+          {% if block.settings.link != blank %}
+            </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+	</div>
+</div>
+</div>
+{% schema %}
+{
+  "name": "Logo brand",
+  "class": "index-section index-manu",
+  "max_blocks": 20,
+  "settings": [
+	{
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+	{
+        "type": "text",
+        "id": "brand_grid_item",
+        "label": "Grid Item",
+        "default": "5"
+      },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "I nostri marchi"
+    },
+    {
+      "type": "color",
+      "id"  : "bg_color",
+      "label":" Background color",
+      "default": "#f5f5f5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo_image",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Optional"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo brand",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

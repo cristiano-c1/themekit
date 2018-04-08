@@ -1,0 +1,100 @@
+{% assign grid_item = section.settings.grid_item %}
+<div class="section-widget-products space-40" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-categories wrapper">
+    <div class="owl-carousel-play">
+      <div class="categories-carousel owl-carousel owl-theme " data-items="{{grid_item}}" data-tabletsmall="[768,2]" data-desktopsmall="[979,{{grid_item}}]" data-desktop="[1199,{{grid_item}}]" data-pagination="false" data-navigation="true" data-autoPlay="false">
+        {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+        {% assign enable = block.settings.collections_enable %}
+
+        {% if enable %}
+        <div class="info" style="background:{{block.settings.bg_collection}};">
+          <div class="content-category">
+            <div class="title">
+              <i class="fa fa-angle-right"></i>
+              <a  href="{{ collections[block.settings.collection].url }}">
+                {{ collections[block.settings.collection].title }}
+              </a> 
+            </div>
+            <div class="sub">
+              <span>{{ collections[block.settings.collection].products_count }} {{ 'layout.customer.products' | t }} </span>
+            </div>	
+          </div>	
+        </div>				
+        {% endif %}
+
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>	
+</div>
+{% schema %}
+    {
+    "name": "Product Category",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Space"
+      },
+      {
+        "type": "text",
+        "id": "margin_top",
+        "label": "Margin Top",
+        "info": "Defined in pixels. Do not add the 'px' unit."
+      },
+      {
+        "type": "text",
+        "id": "margin_bottom",
+        "label": "Margin Bottom",
+        "info": "Defined in pixels. Do not add the 'px' unit."
+      },
+      {
+        "type": "text",
+        "id": "grid_item",
+        "label": "Grid Item",
+        "default": "4"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "Grid_Categori",
+        "name": "Grid Categories",
+        "settings": [
+          {
+            "type": "header",
+            "content": "***Category Image***"
+          },
+          {
+            "type": "checkbox",
+            "id": "collections_enable",
+            "label": "Enable item 1"
+          },
+          {
+            "type": "color",
+            "id": "bg_collection",
+            "label": "Background color",
+            "default": "#9fa8da"
+          },
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Choose collection"
+          }
+        ]
+      }
+    ],
+	"presets": [
+        {
+          "name": "Products Category",
+          "category": "Product"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

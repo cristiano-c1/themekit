@@ -1,0 +1,111 @@
+<div class="section-widget-products space-40" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="wrapper">
+			 <div class="grid">
+        {% if section.blocks.size > 0 %}
+        {%- assign i = 1 -%}
+        {% for block in section.blocks %}
+				<div class="grid__item large--one-third medium--one-half small--one-whole">
+						<div class="widget-product widget">
+						  <h2 class="title">{{ block.settings.widget_product_title }}</h2>
+              			  {% assign products_limit = block.settings.widget_product_limit %}
+						  {% assign collection_1 = block.settings.widget_product_collection %}
+						  <div class="widget__content">
+                            {% for product in collections[collection_1].products limit: products_limit %}
+                              {% include 'widget-product' %}
+                            {% endfor %}
+						  </div>
+						</div> <!-- end widget 1 -->
+				</div>
+        {%- assign i = i | plus : 1 -%}
+        {% endfor %}
+        {% endif %}
+			</div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Widget list product",
+  "max_blocks": 3,
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "list",
+      "name": "List product",
+      "settings": [
+       {
+          "type": "text",
+          "id": "widget_product_title",
+          "label": "Title",
+          "default": "All products"
+        },
+        {
+          "type": "collection",
+          "id": "widget_product_collection",
+          "label": "Choose collection"
+        },
+        {
+          "type": "text",
+          "id": "widget_product_limit",
+          "label": "Limit number of products",
+          "default": "2"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Widget product 3 col",
+      "category": "Product",
+      "blocks": [
+        {
+          "type": "list",
+          "settings": {
+            "widget_product_title": "All product",
+            "widget_product_limit": "3"
+          }
+        },
+        {
+          "type": "list",
+          "settings": {
+            "widget_product_title": "Bestseller",
+            "widget_product_limit": "4"
+          }
+        },
+        {
+          "type": "list",
+          "settings": {
+            "widget_product_title": "New arrivals",
+            "widget_product_limit": "5"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

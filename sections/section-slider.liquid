@@ -1,0 +1,182 @@
+<!-- /templates/snippets/section-slider.liquid -->
+<div class="section-widget-products" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="{% if template != 'index' %}wrapper{% endif %}">
+    <div class="section-slider">
+    	<div class="grid">
+    		<div class="grid__item medium--one-whole ">
+    			<div class="slider-carousel owl-carousel owl-theme" id="slider-carousel" data-mobile="[479,1]" data-tabletsmall="[768,1]" data-desktopsmall="[979,1]" data-desktop="[1199,1]" data-pagination="false" data-navigation="true" data-autoPlay="{{section.settings.slide_carousel_autoplay}}" data-items="1">
+    				{% if section.blocks.size > 0 %}
+    		            {% for block in section.blocks %}
+    						{% assign url = settings[_url] %}
+    						<div class="slider_element">
+    							{% if block.settings.slide_image != blank %}
+    	                      		{{ block.settings.slide_image | img_url: 'master' | img_tag: block.settings.slide_image.alt , 'Slide' }}
+    	                    	{% endif %}
+    							<div class="slider-text small--hide text-{{block.settings.text_alignment}}">
+    								<div class="txt0 des wow {{block.settings.slide_effect}}" data-wow-duration="1s">{{block.settings.slider_txt0}}</div>
+    								<div class="txt1 des wow {{block.settings.slide_effect}}" data-wow-duration="1s">{{block.settings.slider_txt1}}</div>
+    								<div class="txt2 des wow {{block.settings.slide_effect}}" data-wow-duration="2s">{{block.settings.slider_txt2}}</div>
+    								{% if block.settings.slider_btn1 != blank %}
+    									<div class="des wow {{block.settings.slide_effect}}" data-wow-duration="3s"><a href="{{ block.settings.slider_url_btn1 }}" class="btn btn--secondary">{{ block.settings.slider_btn1 }}</a></div>
+    								{% endif %}
+    							</div>
+    						</div>
+    					{% endfor %}
+    	            {% endif %}
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Home page - Slider",
+  "settings": [
+      {
+        "type": "header",
+        "content": "Slider Options"
+      },
+      {
+          "type": "text",
+          "id": "slide_carousel_autoplay",
+          "label": "Set autoPlay",
+          "default": "8000",
+          "info": "ex: false, 3000, 5000..."
+      }
+     ],
+	"blocks": [
+    {
+      "type": "Slide_image",
+      "name": "Slide",
+      "settings": [
+
+        {
+          "type": "image_picker",
+          "id": "slide_image",
+          "label": "Image"
+        },
+	      {
+	        "type": "text",
+	        "id": "slider_txt0",
+	        "label": "Text Top "
+	      },
+	      {
+	        "type": "textarea",
+	        "id": "slider_txt1",
+	        "label": "Text Middle "
+	      },
+	      {
+	        "type": "text",
+	        "id": "slider_txt2",
+	        "label": "Text Small "
+	      },
+	      {
+	        "type": "text",
+	        "id": "slider_btn1",
+	        "label": "Text Button",
+	        "default": "Shop now"
+	      },
+	      {
+	        "type": "text",
+	        "id": "slider_url_btn1",
+	        "label": "Button Url",
+	        "default": "#"
+	      },
+	      {
+	        "type": "select",
+	        "id": "text_alignment",
+	        "label": "Text Alignment",
+	        "default": "left",
+	        "info": "Select text alignment.",
+	        "options": [
+	          {
+	            "value": "left",
+	            "label": "left"
+	          },
+	          {
+	            "value": "right",
+	            "label": "right"
+	          },
+	          {
+	            "value": "center",
+	            "label": "center"
+	          }
+	        ]
+	      },
+	      {
+	        "type": "select",
+	        "id": "slide_effect",
+	        "label": "Effect",
+	        "default": "bounceInDown",
+	        "info": "Get class Effect from http:\/\/daneden.github.io\/animate.css\/",
+	        "options": [
+	          {
+	            "value": "fadeIn",
+	            "label": "fadeIn"
+	          },
+	          {
+	            "value": "fadeInDown",
+	            "label": "fadeInDown"
+	          },
+	          {
+	            "value": "fadeInUp",
+	            "label": "fadeInUp"
+	          },
+	          {
+	            "value": "fadeInLeft",
+	            "label": "fadeInLeft"
+	          },
+	          {
+	            "value": "fadeInRight",
+	            "label": "fadeInRight"
+	          },
+	          {
+	            "value": "zoomIn",
+	            "label": "zoomIn"
+	          },
+	          {
+	            "value": "zoomOut",
+	            "label": "zoomOut"
+	          },
+	          {
+	            "value": "bounceIn",
+	            "label": "bounceIn"
+	          },
+	          {
+	            "value": "bounceInDown",
+	            "label": "bounceInDown"
+	          },
+	          {
+	            "value": "bounceInLeft",
+	            "label": "bounceInLeft"
+	          },
+	          {
+	            "value": "bounceInRight",
+	            "label": "bounceInRight"
+	          },
+	          {
+	            "value": "bounceInUp",
+	            "label": "bounceInUp"
+	          }
+	        ]
+	      }
+      ]
+    }
+  ],
+	"presets": [
+      {
+        "name": "Slider image",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

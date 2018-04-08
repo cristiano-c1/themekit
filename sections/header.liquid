@@ -1,0 +1,192 @@
+<!-- /snippets/header.liquid -->
+<div class="header">
+  <div class="site-header__topbar medium-down--hide">
+    {% if shop.customer_accounts_enabled %}
+      <div class="site-header__account ultility-item large--left">
+        <span>
+          {{ 'layout.customer.account' | t}}
+          <i class="fa fa-angle-down"></i>
+        </span>
+
+        <ul>
+          {% if customer  %}
+            {% if customer.first_name != blank %}
+              {% capture first_name %}<li><a href="/account">{{ customer.first_name }}</a></li>{% endcapture %}
+              {{ form.first_name }}
+            {% else %}
+              <li>
+                <a href="/account">{{ 'layout.customer.account' | t }}</a>
+              </li>
+            {% endif %}
+             <li> <a href="/account/logout" class="customer_logout_link">{{ 'layout.customer.log_out' | t}}</a></li>
+          {% else %}
+            <li>
+            <a href="/account/login" class="customer_login_link">{{ 'layout.customer.log_in' | t }}</a>
+            </li>
+            {% if shop.customer_accounts_optional %}
+              <li>
+              <a href="/account/register" class="customer_register_link">{{ 'layout.customer.create_account' | t}}</a>
+              </li>
+            {% endif %}
+          {% endif %}
+
+
+          <li>
+          <a href="/pages/wish-list">{{ 'layout.customer.wishlist' | t }}</a></li>
+
+        </ul>
+      </div>
+    {% endif %} <!-- end account -->
+    {% if settings.currency_enable %}
+    <div class="site-header__currency ultility-item large--left">
+        <span>
+          {{ 'general.topbar.currency' | t}}
+           <i class="fa fa-angle-down"></i>
+        </span>
+    {% include 'currency-picker' %}
+    </div>
+    {% endif %} <!-- end currency -->
+
+    {% unless customer %}
+     <div class="site-header__login large--right">
+        <ul>
+          <li>
+            <a href="/account/login" class="customer_login_link">{{ 'layout.customer.log_in' | t }}</a>
+          </li>
+          <li>
+             <a href="/account/register" class="customer_register_link">{{ 'layout.customer.create_account' | t}}</a>
+          </li>
+        </ul>
+     </div>
+    {% endunless %}
+ </div>
+
+  <div class="grid main-header">
+    <div class="grid__item large--three-twelfths">
+      <div class="logo">
+        {% if template == 'index' %}
+          <h1 class="site-header__logo" itemscope itemtype="http://schema.org/Organization">
+        {% else %}
+          <div class="h1 site-header__logo" itemscope itemtype="http://schema.org/Organization">
+        {% endif %}
+          {% if section.settings.logo_use_image %}
+            <a href="{{shop.url}}">
+              {% if section.settings.logo == blank %}
+              {% capture _img_url %}logo.png{% endcapture %}
+              <img src="{{ _img_url | asset_url}}" alt="Logo">
+              {% else %}
+              <img src="{{ section.settings.logo | img_url:'master' }}" alt="Erboristeria Parafarmacia Il Quadrifoglio" >
+              {% endif %}
+              </a>
+          {% endif %}
+
+        {% if template == 'index' %}
+          </h1>
+        {% else %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="grid__item push--large--one-twelfth large--eight-twelfths medium-down--hide ">
+      <div class="grid">
+        <div class="grid__item large--nine-twelfths">
+          <div class="site-header__search">
+            {% include 'search-bar' %}
+          </div> <!-- end search -->
+        </div>
+
+        <div class="grid__item large--three-twelfths">
+          <div class="site-header__car  large--right">
+            <a href="/cart" class="site-header__cart-toggle {% if settings.ajax_cart_method == "drawer" %} js-drawer-open-right {% endif %} " aria-controls="CartDrawer" aria-expanded="false">
+            <span class="cart-icon"></span>
+            <span class="cart_text">
+               <span id="CartCount">{{ cart.item_count }}</span>
+                {{ 'layout.cart.items_count' | t: count: cart.item_count }}
+                <span id="CartCost">{{ cart.total_price | money }}</span>
+            </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="grid__item push--large--one-twelfth large--eight-twelfths medium-down--hide">
+      <div class="grid site-infos">
+        <div class="grid__item large--three-twelfths">
+          <div class="">
+            <a href="/pages/your-page-handle"><img src="{{ 'header-img.png' | asset_url}}" alt=""></a>
+            <div class="site-infos__details">
+              <span>ASSISTENZA</span>
+              Contattaci
+            </div>
+          </div>
+        </div>
+        <div class="grid__item large--three-twelfths">
+          <div class="">
+            <a href=""><img src="{{ 'header-img2.png' | asset_url}}" alt=""></a>
+            <div class="site-infos__details">
+              <span>SICUREZZA</span>
+              100% Pagamenti Sicuri
+            </div>
+          </div>
+        </div>
+        <div class="grid__item large--three-twelfths">
+          <div class="">
+            <a href=""><img src="{{ 'header-img3.png' | asset_url}}" alt=""></a>
+            <div class="site-infos__details">
+              <span>RESO GRATUITO</span>
+              Diritto Di Recesso E Reso 30 Giorni
+            </div>
+          </div>
+        </div>
+        <div class="grid__item large--three-twelfths">
+          <div class="">
+            <a href="/pages/spedizioni"><img src="{{ 'header-img4.png' | asset_url}}" alt=""></a>
+            <div class="site-infos__details">
+              <span>SPEDIZIONI</span>
+              Servizio affidabile e veloce, <strong>GRATUITA PER ACQUISTI A PARTIRE DA 50€</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Logo"
+      },
+      {
+        "type": "checkbox",
+        "id": "logo_use_image",
+        "label": "Use custom logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image",
+        "info": "100 x 22px .png recommended"
+      },
+      {
+        "type": "range",
+        "id": "logo_maxwidth",
+        "min": 100,
+        "max": 200,
+        "step": 5,
+        "unit": "px",
+        "label": "Logo display width",
+        "default": 100
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

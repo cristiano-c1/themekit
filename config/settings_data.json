@@ -1,0 +1,1139 @@
+{
+  "current": {
+    "color_default": "#aacc5a",
+    "color_primary": "#aacc5a",
+    "color_secondary": "#ffffff",
+    "color_borders": "#e5e5e5",
+    "color_link": "#000000",
+    "color_body_bg": "#ffff00",
+    "color_heading_text": "#000000",
+    "color_body_text": "#666666",
+    "color_topbar_bg": "#c9daa3",
+    "color_topbar_text": "#333333",
+    "color_nav_bg": "#bfa17f",
+    "color_nav_text": "#ffffff",
+    "color_sub_nav_bg": "#ffffff",
+    "color_sub_nav_text": "#888888",
+    "color_footer_bg": "#fafafa",
+    "color_footer_title_text": "#000000",
+    "color_footer_text": "#111111",
+    "color_footer_copyright_bg": "#fafafa",
+    "body_font": "Droid Serif",
+    "body_font_size": "14",
+    "heading_font": "Dosis",
+    "menu_font": "Dosis",
+    "menu_font_size": "15",
+    "product_font": "Dosis",
+    "product_font_size": "16",
+    "button_font": "Dosis",
+    "newsletter_form_action": "\/\/brainos.us13.list-manage.com\/subscribe\/post?u=ade328137eca4a0d7d1ff928e&amp;id=6397922aa9",
+    "enable_auto_search": true,
+    "megamenu_1_parent": "news",
+    "megamenu_1_column_1_title": "What's new",
+    "megamenu_1_column_1_menu": "",
+    "megamenu_1_column_2_title": "Shop",
+    "megamenu_1_column_2_menu": "",
+    "megamenu_1_column_3_title": "Infomation",
+    "megamenu_1_column_3_menu": "",
+    "megamenu_1_column_4_title": "Account",
+    "megamenu_1_column_4_menu": "",
+    "megamenu_2_parent": "",
+    "megamenu_2_column_1_title": "Collection",
+    "megamenu_2_column_1_menu": "",
+    "megamenu_2_column_2_title": "Bestseller",
+    "megamenu_2_column_2_menu": "",
+    "megamenu_2_column_3_title": "Featured",
+    "megamenu_2_column_3_menu": "",
+    "megamenu_2_column_4_title": "Sale off",
+    "megamenu_2_column_4_menu": "",
+    "megamenu_3_parent": "",
+    "megamenu_3_column_1_title": "",
+    "megamenu_3_column_1_menu": "",
+    "megamenu_3_column_2_title": "",
+    "megamenu_3_column_2_menu": "",
+    "megamenu_3_column_3_title": "",
+    "megamenu_3_column_3_menu": "",
+    "megamenu_3_column_4_title": "",
+    "megamenu_3_column_4_menu": "",
+    "currency_enable": false,
+    "supported_currencies": "USD EUR GBP",
+    "popup_newsletter_enable": true,
+    "bg_newletter": "#ffffff",
+    "enable_bg_img": false,
+    "popup_newsletter_title": "newsletter",
+    "popup_newsletter_subtitle": "welcome to our site!",
+    "popup_newsletter_description": "Subscribe to our newsletters and don’t miss new arrivals, the <br> latest fashion updates and our promotions.",
+    "display_categories_sidebar": true,
+    "filter_enable": false,
+    "filter_title": "Filters By",
+    "enable_shop_by_tags_1": true,
+    "shop_by_tags_1_title": "Color",
+    "shop_by_color_text_1": "red",
+    "shop_by_color_1": "#f50000",
+    "shop_by_color_text_2": "blue",
+    "shop_by_color_2": "#005ff5",
+    "shop_by_color_text_3": "white",
+    "shop_by_color_3": "#fff",
+    "shop_by_color_text_4": "pink",
+    "shop_by_color_4": "#ff019e",
+    "shop_by_color_text_5": "orange",
+    "shop_by_color_5": "#ee8701",
+    "shop_by_color_text_6": "green",
+    "shop_by_color_6": "#53dd5a",
+    "shop_by_color_text_7": "",
+    "shop_by_color_7": "#ff019e",
+    "shop_by_color_text_8": "",
+    "shop_by_color_8": "#ff019e",
+    "shop_by_color_text_9": "",
+    "shop_by_color_9": "#ff019e",
+    "shop_by_color_text_10": "",
+    "shop_by_color_10": "#ff019e",
+    "shop_by_color_text_11": "cyan",
+    "shop_by_color_11": "#00ffff",
+    "shop_by_color_text_12": "cyan",
+    "shop_by_color_12": "#00ffff",
+    "shop_by_color_text_13": "cyan",
+    "shop_by_color_13": "#00ffff",
+    "shop_by_color_text_14": "cyan",
+    "shop_by_color_14": "#00ffff",
+    "shop_by_color_text_15": "cyan",
+    "shop_by_color_15": "#00ffff",
+    "shop_by_color_text_16": "cyan",
+    "shop_by_color_16": "#00ffff",
+    "shop_by_color_text_17": "cyan",
+    "shop_by_color_17": "#00ffff",
+    "shop_by_color_text_18": "cyan",
+    "shop_by_color_18": "#00ffff",
+    "shop_by_color_text_19": "cyan",
+    "shop_by_color_19": "#00ffff",
+    "shop_by_color_text_20": "cyan",
+    "shop_by_color_20": "#00ffff",
+    "enable_shop_by_tags_2": true,
+    "shop_by_tags_2_title": "Price",
+    "shop_by_tags_2_list_tags": "1$-100$,101$-200$ ,200$-400$",
+    "enable_shop_by_tags_4": false,
+    "shop_by_tags_4_title": "Size",
+    "shop_by_tags_4_list_tags": "L, M, S",
+    "enable_shop_by_tags_5": false,
+    "shop_by_tags_5_title": "",
+    "shop_by_tags_5_list_tags": "",
+    "widget_enable_1": true,
+    "widget_title_1": "New Products",
+    "widget_collection_1": "",
+    "widget_enable_2": false,
+    "widget_title_2": "Bestseller",
+    "widget_collection_2": "",
+    "ads_enable": false,
+    "ads_img": "",
+    "ads_block_url": "#",
+    "custom_cms_enable": false,
+    "custom_cms_title": "Custom cms widget",
+    "custom_cms_content": "<em>Custom CMS block displayed at the left sidebar on the Catalog Page. Put your own content here: text, html, images, media... whatever you like.<\/em><br><br><em>There are many similar sample content placeholders across the store. All editable from admin panel.<\/em>",
+    "tags_enable": false,
+    "cart_notes_enable": true,
+    "cart_vendor_enable": false,
+    "ajax_cart_method": "drawer",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "contact_box_1": "123 Sky Tower, West 21th Street,<br> Suite 721, NY",
+    "contact_box_i1": "map-marker",
+    "contact_box_2": "+844 123 456 789<br> +844 123 456 789",
+    "contact_box_i2": "phone-square",
+    "contact_box_3": "contact@company.com<br> info@company.com",
+    "contact_box_i3": "envelope",
+    "contact_map": true,
+    "embed_code": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3023.9430831617974!2d-73.84385868412926!3d40.719269445106846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2609e1c08e7ad%3A0x74947fc3a4d8af6f!2s109-1+72nd+Rd%2C+Forest+Hills%2C+NY+11375%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1458377830375\" width=\"1170\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
+    "nb_thumbnail_visible": "4",
+    "show_product_review": true,
+    "show_product_swatch": true,
+    "show_product_short_des": true,
+    "show_product_share_this": true,
+    "show_product_next_pre": true,
+    "show_shipping_tab": true,
+    "shipping_tab_title": "Shipping and Return",
+    "shipping_tab_content": "<b>Returns Policy<\/b><br>\r\n<p>You may return most new, unopened items within 30 days of delivery for a full refund. We'll also pay the return shipping costs if the return is a result of our error (you received an incorrect or defective item, etc.).<\/p>\r\n\r\n<p>You should expect to receive your refund within four weeks of giving your package to the return shipper, however, in many cases you will receive a refund more quickly. This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days), the time it takes us to process your return once we receive it (3 to 5 business days), and the time it takes your bank to process our refund request (5 to 10 business days).<\/p>\r\n\r\n<p>If you need to return an item, simply login to your account, view the order using the 'Complete Orders' link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.<\/p>\r\n\r\n<b>Shipping<\/b><br>\r\n<p>We can ship to virtually any address in the world. Note that there are restrictions on some products, and some products cannot be shipped to international destinations.<\/p>\r\n\r\n<p>When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.<\/p>\r\n\r\n<p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full po<\/p>",
+    "show_size_chart_tab": true,
+    "size_chart_title": "Size Chart",
+    "related_col": "5",
+    "related_limit": "12",
+    "vertical-menu-enable": true,
+    "vertical-menu-title": "Categories",
+    "vertical-menu": "categories",
+    "slide_carousel_autoplay": "8000",
+    "slide_carousel_enable1": true,
+    "text_slider1_txt0": "Sale off 20% - 50%",
+    "text_slider1_txt1": "<span>New skin food<\/span>\r\n100% natural origin",
+    "text_slider1_txt2": "Magic Beauty Care",
+    "slider_btn1": "Shop now",
+    "slider_url_btn1": "#",
+    "text_alignment1": "center",
+    "slide_effect1": "bounceInDown",
+    "slide_carousel_enable2": true,
+    "text_slider2_txt0": "Sale off 20% - 50%",
+    "text_slider2_txt1": "<span>3in1 Cleanser<\/span>\r\nAloe vera 92% sooth",
+    "text_slider2_txt2": "Magic Face Cleanser",
+    "slider_btn2": "Shop now",
+    "slider_url_btn2": "#",
+    "text_alignment2": "right",
+    "slide_effect2": "bounceInDown",
+    "slide_carousel_enable3": true,
+    "text_slider3_txt0": "Sale off 20% - 50%",
+    "text_slider3_txt1": "<span>3in1 Mascara<\/span>\r\n100% natural origin",
+    "text_slider3_txt2": "Magic Lash Boost & Curler.",
+    "slider_btn3": "Shop now",
+    "slider_url_btn3": "#",
+    "text_alignment3": "center",
+    "slide_effect3": "bounceInDown",
+    "slide_carousel_enable4": false,
+    "text_slider4_txt0": "",
+    "text_slider4_txt1": "",
+    "text_slider4_txt2": "",
+    "slider_btn4": "Shop now",
+    "slider_url_btn4": "#",
+    "text_alignment4": "left",
+    "slide_effect4": "bounceInDown",
+    "nb_column": "4",
+    "nb_per_page": "20",
+    "product_show_swatch": false,
+    "bg-breadcrumb": "#ffffff",
+    "brand_carousel_title": "Our brands",
+    "brand_grid_item": "5",
+    "brand_bg": "#ffffff",
+    "brand_carousel_enable_1": true,
+    "brand_carousel_url_1": "#",
+    "brand_carousel_enable_2": true,
+    "brand_carousel_url_2": "#",
+    "brand_carousel_enable_3": true,
+    "brand_carousel_url_3": "#",
+    "brand_carousel_enable_4": true,
+    "brand_carousel_url_4": "#",
+    "brand_carousel_enable_5": true,
+    "brand_carousel_url_5": "#",
+    "brand_carousel_enable_6": true,
+    "brand_carousel_url_6": "#",
+    "brand_carousel_enable_7": true,
+    "brand_carousel_url_7": "#",
+    "brand_carousel_enable_8": true,
+    "brand_carousel_url_8": "#",
+    "brand_carousel_enable_9": true,
+    "brand_carousel_url_9": "#",
+    "brand_carousel_enable_10": true,
+    "brand_carousel_url_10": "#",
+    "collections_grid_item": "3",
+    "collections_enable_1": true,
+    "collection_1": "weekly-specials",
+    "bg_collection_1": "#9fa8da",
+    "collections_enable_2": true,
+    "collection_2": "value-sets",
+    "bg_collection_2": "#80cbc4",
+    "collections_enable_3": true,
+    "collection_3": "travel-size",
+    "bg_collection_3": "#ffab91",
+    "collections_enable_4": false,
+    "collection_4": "",
+    "bg_collection_4": "#9fa8da",
+    "collections_enable_5": false,
+    "collection_5": "",
+    "bg_collection_5": "#9fa8da",
+    "collections_enable_6": false,
+    "collection_6": "",
+    "bg_collection_6": "#9fa8da",
+    "check_widget_product_1": true,
+    "widget_product_1": "All Product",
+    "home_collection_1": "all-product",
+    "widget_product_num_1": "3",
+    "check_widget_product_2": true,
+    "widget_product_2": "Bestseller",
+    "home_collection_2": "bestseller",
+    "widget_product_num_2": "3",
+    "check_widget_product_3": true,
+    "widget_product_3": "New Arrivals",
+    "home_collection_3": "new-arrivals",
+    "widget_product_num_3": "3",
+    "product_featured_title": "Popular products",
+    "product_featured_collection": "popular-products",
+    "product_featured_num": "5",
+    "product_featured_limit": "5",
+    "tab_title": "Our products",
+    "tab_num": "5",
+    "tab_limit": "5",
+    "tab_title_1": "All Product",
+    "tab_collection_1": "all-product",
+    "tab_title_2": "Bestseller",
+    "tab_collection_2": "popular-products",
+    "tab_title_3": "New Arrivals",
+    "tab_collection_3": "new-arrivals",
+    "tab_title_4": "Sale!",
+    "tab_collection_4": "sale",
+    "select_effect_banner_2": "effect-v5",
+    "banner_2_image_1_url": "#",
+    "banner_2_image_2_url": "#",
+    "select_effect_banner_1": "effect-v5",
+    "banner_1_image_1_url": "#",
+    "select_effect_banner_1_2": "effect-v5",
+    "banner_1_image_1_url_2": "#",
+    "logo_use_image": true,
+    "logo_max_width": "450",
+    "favicon_enable": false,
+    "bg_newletter_footer": "#ffffff",
+    "enable_bg_newsletter": true,
+    "newsletter_title": "Subscribe",
+    "footer_contact_title": "Contact",
+    "footer_contact_content": "For any business inquiries, partner or affiliate related <br>questions, please contact us using the contact info or the<br> form below\r\n<ul class=\"contact_footer\">\r\n<li>\r\n<i class=\"a-location\"> <\/i>\r\nBeauty Store Online, 6762 33 Ave N, St Petersburg\r\nFL 33710\r\n<\/li>\r\n<li>\r\n<i class=\"a-mobile\"> <\/i>\r\n<span> 084 0123 456 789<\/span>\r\n<\/li>\r\n<li>\r\n<i class=\"a-email\"> <\/i>\r\nEmail: contact@store.com\r\n<\/li>\r\n<\/ul>",
+    "footer_openning_title": "Opening time",
+    "footer_openning_content": "Monday - Satuday : <br>\r\n<span>8.00 am - 9.00 pm<\/span> <br>\r\nOn Sunday : <br>\r\n<span>CLOSE<\/span>",
+    "footer_menu_1_title": "Infomation",
+    "footer_menu_1": "infomation",
+    "footer_menu_2_title": "My Account",
+    "footer_menu_2": "my-account",
+    "footer_social_content": "<h4>CONNECT US<\/h4>\r\n<div class=\"socials_box\">\r\n<a href=\"#\"><i class=\"icon icon-google\"><\/i><\/a>\r\n<a href=\"#\"><i class=\"icon icon-twitter\"><\/i><\/a>\r\n<a href=\"#\"><i class=\"icon icon-facebook\"><\/i><\/a>\r\n<a href=\"#\"><i class=\"icon icon-pinterest\"><\/i><\/a>\r\n<a href=\"#\"><i class=\"icon icon-rss\"><\/i><\/a>\r\n<\/div>",
+    "copyright_content": "Copyright © 2016 Beauty Store.",
+    "enable_payment_1": true,
+    "payment_url1": "#",
+    "enable_payment_2": true,
+    "payment_url2": "#",
+    "enable_payment_3": true,
+    "payment_url3": "#",
+    "enable_payment_4": true,
+    "payment_url4": "#",
+    "enable_payment_5": true,
+    "payment_url5": "#",
+    "enable_payment_6": true,
+    "payment_url6": "#",
+    "enable_payment_7": true,
+    "payment_url7": "#",
+    "home_section_1": "section-slider",
+    "home_section_space_1": "space-15 space-top-15",
+    "home_section_2": "section-categories",
+    "home_section_space_2": "space-40",
+    "home_section_3": "section-product-tab",
+    "home_section_space_3": "",
+    "home_section_4": "section-banner-2-col",
+    "home_section_space_4": "space-20",
+    "home_section_5": "section-product-featured",
+    "home_section_space_5": "space-top-30",
+    "home_section_6": "section-banner-1-col",
+    "home_section_space_6": "space-40",
+    "home_section_7": "section-product-widget-3",
+    "home_section_space_7": "",
+    "home_section_8": "section-banner-1-colv2",
+    "home_section_space_8": "space-top-10 space-10",
+    "home_section_9": "section-brand",
+    "home_section_space_9": "space-20 space-top-20",
+    "checkout_use_header_image": false,
+    "checkout_logo": "logo.png",
+    "checkout_use_storefront_logo": "true",
+    "checkout_use_body_background_image": false,
+    "checkout_use_sidebar_background_image": false,
+    "home_banner1_txt1": "",
+    "home_banner1_txt2": "",
+    "home_banner1_txt3": "",
+    "home_banner1_link": "",
+    "home_banner2_txt1": "",
+    "home_banner2_txt2": "",
+    "home_banner2_txt3": "",
+    "home_banner2_link": "",
+    "home_banner3_txt1": "",
+    "home_banner3_txt2": "",
+    "home_banner3_txt3": "",
+    "home_banner3_link": "",
+    "home_banner4_txt1": "",
+    "home_banner4_txt2": "",
+    "home_banner4_txt3": "",
+    "home_banner4_link": "",
+    "home_banner5_txt1": "",
+    "home_banner5_txt2": "",
+    "home_banner5_txt3": "",
+    "home_banner5_link": "",
+    "home_banner6_txt1": "",
+    "home_banner6_txt2": "",
+    "home_banner6_txt3": "",
+    "home_banner6_link": "",
+    "nb_column_blog": "3",
+    "blog_title": "Latest blog",
+    "text_blog_button": "See more",
+    "new_arrival_title": "New Arrivals",
+    "new_arrival_collection": "all-product",
+    "new_arrival_num": "3",
+    "new_arrival_limit": "6",
+    "new_arrival_collection2": "new-arrivals",
+    "new_arrival_limit2": "8",
+    "color_sub_ver_bg": "#2c2c2c",
+    "color_sub_ver_text": "#ffffff",
+    "color_footer_social_link": "#999999",
+    "p_price": "#000",
+    "p_label_new": "#17c187",
+    "p_label_sale": "#8e3adc",
+    "keep_header": false,
+    "brands_enable": false,
+    "ver_title": "Category",
+    "megamenu_1_column_5_title": "Shop",
+    "megamenu_1_image_1_url": "#",
+    "megamenu_2_column_5_title": "",
+    "megamenu_2_image_1_url": "#",
+    "megamenu_3_column_5_title": "",
+    "megamenu_3_image_1_url": "",
+    "featured_collection": "all-product",
+    "featured_title": "Featured Products",
+    "featured_limit": "8",
+    "recommended_collection": "all-product",
+    "recommended_title": "highly recommended",
+    "recommended_num": "4",
+    "recommended_limit": "9",
+    "ads-1-1_url": "#",
+    "ads-2-title": "shop by riding style",
+    "ads-2-1_url": "#",
+    "ads-2-1_text1": "harley",
+    "ads-2-1_text2": "Duis sed odio sit amet nibh",
+    "ads-2-2_url": "#",
+    "ads-2-2_text1": "vulputate",
+    "ads-2-2_text2": "Duis sed odio sit amet nibh",
+    "ads-2-3_url": "#",
+    "ads-2-3_text1": "Duis sed",
+    "ads-2-3_text2": "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris",
+    "ads-2-4_url": "#",
+    "ads-2-4_text1": "cursus",
+    "ads-2-4_text2": "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris",
+    "ads-2-5_url": "#",
+    "ads-2-5_text1": "cursus",
+    "ads-2-5_text2": "Duis sed odio sit amet nibh",
+    "ads-3-1_url": "#",
+    "testimonial_bg": "#f9f9f9",
+    "testimonial_1": true,
+    "testimonial_text1_1": "checkout most recent",
+    "testimonial_text2_1": "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio",
+    "testimonial_text3_1": "real ride review",
+    "testimonial_2": true,
+    "testimonial_text1_2": "checkout most recent",
+    "testimonial_text2_2": "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio",
+    "testimonial_text3_2": "real ride review",
+    "testimonial_3": false,
+    "testimonial_text1_3": "",
+    "testimonial_text2_3": "",
+    "testimonial_text3_3": "",
+    "testimonial_4": false,
+    "testimonial_text1_4": "",
+    "testimonial_text2_4": "",
+    "testimonial_text3_4": "",
+    "testimonial_5": false,
+    "testimonial_text1_5": "",
+    "testimonial_text2_5": "",
+    "testimonial_text3_5": "",
+    "testimonial_6": false,
+    "testimonial_text1_6": "",
+    "testimonial_text2_6": "",
+    "testimonial_text3_6": "",
+    "widget_title_3": "Recent product",
+    "widget_collection_3": "frontpage",
+    "widget_collection_limit_3": "3",
+    "widget_title_4": "May be you like",
+    "widget_collection_4": "frontpage",
+    "widget_collection_limit_4": "8",
+    "slide_carousel_enable_1": true,
+    "slide_carousel_url_1": "#",
+    "slide_carousel_text1_1": "hammer fg-x",
+    "slide_carousel_text2_1": "the best just got better",
+    "slide_carousel_text3_1": "true performance is all about adaptability",
+    "slide_carousel_enable_2": true,
+    "slide_carousel_url_2": "#",
+    "slide_carousel_text1_2": "hammer fg-x",
+    "slide_carousel_text2_2": "the best just got better",
+    "slide_carousel_text3_2": "true performance is all about adaptability",
+    "slide_carousel_enable_3": false,
+    "slide_carousel_url_3": "#",
+    "slide_carousel_text1_3": "",
+    "slide_carousel_text2_3": "",
+    "slide_carousel_text3_3": "",
+    "slide_carousel_enable_4": false,
+    "slide_carousel_url_4": "#",
+    "slide_carousel_text1_4": "",
+    "slide_carousel_text2_4": "",
+    "slide_carousel_text3_4": "",
+    "slide_carousel_enable_5": false,
+    "slide_carousel_url_5": "#",
+    "slide_carousel_text1_5": "",
+    "slide_carousel_text2_5": "",
+    "slide_carousel_text3_5": "",
+    "slide_carousel_effect_text1": "bounceInDown",
+    "slide_carousel_effect_text2": "fadeInUp",
+    "slide_carousel_effect_text3": "bounceInUp",
+    "twittercard_handle": "",
+    "footer_menu_3_title": "Accessory",
+    "footer_menu_3": "",
+    "ft_box_1": "questions? <br\/>send us and email",
+    "ft_box_i1": "envelope-o",
+    "ft_box_2": "call 844 -1525 -6647 <br\/>mon - fri: 9 A.M - 6 P.M",
+    "ft_box_i2": "phone",
+    "ft_box_3": "facebook <br\/>like us",
+    "ft_box_i3": "facebook-square",
+    "ft_box_4": "twitter <br\/>follow us",
+    "ft_box_i4": "twitter",
+    "home_section_full_1": false,
+    "home_section_full_2": false,
+    "home_section_full_3": false,
+    "home_section_full_4": false,
+    "home_section_full_5": false,
+    "home_section_full_6": false,
+    "home_section_full_7": false,
+    "home_section_full_8": false,
+    "home_section_full_9": false,
+    "box1_title": "free delivery worldwide",
+    "box1_des": "on order over $50",
+    "box2_title": "first purchase discount",
+    "box2_des": "10% off and more good stuff",
+    "box3_title": "new season sale",
+    "box3_des": "up to 50% off",
+    "slide_carousel_effect": "zoomIn",
+    "ads-3-2_url": "#",
+    "testimonial_des_1": "Great design, really clean and professional looking PSD theme. Everything from the detail",
+    "testimonial_name_1": "John Doe",
+    "testimonial_info_1": "Designer",
+    "testimonial_des_2": "Great design, really clean and professional looking PSD theme. Everything from the detail",
+    "testimonial_name_2": "John Doe",
+    "testimonial_info_2": "Designer",
+    "testimonial_des_3": "Great design, really clean and professional looking PSD theme. Everything from the detail design to the selection of mock pictures is done with a great perfection.",
+    "testimonial_name_3": "John Doe",
+    "testimonial_info_3": "Designer",
+    "testimonial_des_4": "",
+    "testimonial_name_4": "",
+    "testimonial_info_4": "",
+    "testimonial_des_5": "",
+    "testimonial_name_5": "",
+    "testimonial_info_5": "",
+    "testimonial_des_6": "",
+    "testimonial_name_6": "",
+    "testimonial_info_6": "",
+    "bg-header": "#f9f9f9",
+    "featured_num": "6",
+    "special_collection": "",
+    "special_title": "New Arrivals",
+    "special_num": "2",
+    "special_limit": "8",
+    "newsletter_enable": true,
+    "newsletter_des": "Sign up now to receive information",
+    "widget_product_style_enable_1": true,
+    "widget_product_style_title_1": "Featured",
+    "widget_product_style_collection_1": "frontpage",
+    "widget_product_style_limit_1": "4",
+    "widget_product_style_enable_2": true,
+    "widget_product_style_title_2": "new",
+    "widget_product_style_collection_2": "frontpage",
+    "widget_product_style_limit_2": "4",
+    "widget_product_style_enable_3": true,
+    "widget_product_style_title_3": "best",
+    "widget_product_style_collection_3": "frontpage",
+    "widget_product_style_limit_3": "4",
+    "new_owl_checked": true,
+    "bestseller_collection": "",
+    "bestseller_title": "Bestseller",
+    "bestseller_num": "4",
+    "bestseller_limit": "8",
+    "slide_carousel_effect_text": "bounceInDown",
+    "slide_carousel_effect_btn": "bounceInDown",
+    "b1_url": "#",
+    "b2_url": "#",
+    "b3_url": "#",
+    "b4_url": "#",
+    "custom_top_position": "0",
+    "b6_url": "#",
+    "b7_url": "#",
+    "custom_center_url": "#",
+    "other_style_blog": false,
+    "position_top": "-90px",
+    "latest_posts_v1": "#f9f9f9",
+    "megamenu_2_image_url": "#",
+    "megamenu_3_image_url": "",
+    "testimonial_title": "",
+    "footer_newsletter_enable": true,
+    "custom_center_title": "our story",
+    "custom_center_content": "The key to more success is to get a massage once a week, very important, major key, cloth talk. We don’t see them, we will never see them. Surround yourself with angels. Every chance I get, I water the plants, Lion! Egg whites, turkey sausage, wheat toast, water. <br\/>\r\nOf course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. Look at the sunset, life is amazing, life is beautiful, life is what you make it. Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise.",
+    "custom_center_btn": "Read More",
+    "custom_html_bottom": "",
+    "slide_carousel_text_1": "Spring is just around the corner, it’s time to inject some colour into your wardrobe",
+    "slide_carousel_btn_1": "Shop now",
+    "slide_carousel_text_2": "Spring is just around the corner, it’s time to inject some colour into your wardrobe",
+    "slide_carousel_btn_2": "Shop now",
+    "slide_carousel_text_3": "Spring is just around the corner, it’s time to inject some colour into your wardrobe",
+    "slide_carousel_btn_3": "Shop now",
+    "slide_carousel_text_4": "",
+    "slide_carousel_btn_4": "Shop now",
+    "slide_carousel_text_5": "",
+    "slide_carousel_btn_5": "Shop now",
+    "b1_text_1": "Summer 2016",
+    "b1_text_2": "Bag <br\/>Trending",
+    "b1_position": "top-35",
+    "b2_text_1": "Accessories",
+    "b2_text_2": "Sun Glasses",
+    "b2_position": "bottom-20",
+    "b3_text_1": "Shop",
+    "b3_text_2": "Women",
+    "b3_position": "top-40 right-25",
+    "b4_text_1": "",
+    "b4_text_2": "",
+    "b4_position": "top-40",
+    "b6_text_1": "Shop",
+    "b6_text_2": "Men",
+    "b6_position": "top-40",
+    "support_block_enable": true,
+    "support_block_title": "Call for support:",
+    "support_block_content": "1900 - 123 - 555",
+    "footer_social_enable": true,
+    "footer_social_link": "<ul class=\"inline-list\">  \r\n    <li>\r\n        <a href=\"#\"><i class=\"icon icon-youtube\"><\/i><\/a>\r\n    <\/li>\r\n    <li>\r\n        <a href=\"#\"><i class=\"icon icon-google\"><\/i><\/a>\r\n    <\/li>\r\n    <li>\r\n        <a href=\"#\"><i class=\"icon icon-twitter\"><\/i><\/a>\r\n    <\/li>\r\n    <li>\r\n        <a href=\"#\"><i class=\"icon icon-facebook\"><\/i><\/a>\r\n    <\/li>\r\n<\/ul>",
+    "get_in_touch_title": "PLEASE DO GET IN TOUCH!",
+    "get_in_touch_content": "<p>\r\n        We'd love to hear from you - please use the form to send us your message or ideas. Or simply pop in for a cup of fresh tea and a cookie:\r\n    <\/p>\r\n    <p>\r\n        8808 Ave Dermentum, Onsectetur Adipiscing\r\n        <br>\r\n        Tortor Sagittis, CA 880986,\r\n        <br>United States<\/p>\r\n    <p>\r\n        9087S Divamus Faucibus Str.,\r\n        <br>\r\n        City name,\r\n        <br>\r\n        Postal Code,\r\n        <br>\r\n        CA 90896\r\n        <br>United States<\/p>\r\n    <p>\r\n        Email: stores@domain.com\r\n        <br>Toll-free: (1800) 000 8808<\/p>\r\n        <hr>\r\n    <p class=\"open-hours\">\r\n        Opening Hours:\r\n        <br>\r\n        Monday to Saturday: 9am - 10pm\r\n        <br>Sundays: 10am - 6pm<\/p>",
+    "margin-top-section": "30",
+    "margin-bottom-section": "10",
+    "testimonial_bg_img": false,
+    "testimonial_bg_color": "rgba(0,0,0,0)",
+    "new_arrival_url": "#",
+    "featured_item_url": "#",
+    "bestseller_item_url": "#",
+    "custom_html_top": "<div class=\"grid\">\r\n    <div class=\"grid__item large--two-thirds medium--two-thirds\">\r\n        <a href=\"#\" class=\"effect-v3 space-20\" title=\"banner\"><img src=\"\/\/cdn.shopify.com\/s\/files\/1\/1170\/8098\/t\/2\/assets\/b1.jpg\" alt=\"\" class=\"img-responsive\"><\/a>\r\n        <div class=\"grid\">\r\n        <div class=\"grid__item large--one-half medium--one-half\">\r\n            <a href=\"#\" class=\"effect-v3\" title=\"banner\"><img src=\"\/\/cdn.shopify.com\/s\/files\/1\/1170\/8098\/t\/2\/assets\/b2.jpg\" alt=\"\" class=\"img-responsive\"><\/a>\r\n        <\/div>\r\n        <div class=\"grid__item large--one-half medium--one-half\">\r\n            <a href=\"#\" class=\"effect-v3\" title=\"banner\"><img src=\"\/\/cdn.shopify.com\/s\/files\/1\/1170\/8098\/t\/2\/assets\/b3.jpg\" alt=\"\" class=\"img-responsive\"><\/a>\r\n        <\/div>\r\n        <\/div>\r\n    <\/div>\r\n    <div class=\"grid__item large--one-third medium--one-third\">\r\n        <a href=\"#\" class=\"effect-v3\" title=\"banner\"><img src=\"\/\/cdn.shopify.com\/s\/files\/1\/1170\/8098\/t\/2\/assets\/b4.jpg\" alt=\"\" class=\"img-responsive\"><\/a>\r\n    <\/div>\r\n<\/div>",
+    "custom_html_center": "<div class=\"space-top-50 space-padding-70 border border-8\">\r\n\r\n<div class=\"grid\">\r\n    <div class=\"grid__item large--two-thirds medium--two-thirds\">\r\n        <h2 class=\"section-header text-left\">Our story<\/h2>\r\n        <br>\r\n        <p>There's never been a better time for men to like clothes. But along with the rich variety of labels, styles, and stores speaking to guys of all shapes and sizes comes increased competition. In that crowded landscape, even the most storied brands have to find.\r\n        channelling history while looking towards the future.<\/p>\r\n        <br><span style=\"font-style: italic;\">by Komol Kuchkarov<\/span>\r\n    <\/div>\r\n\r\n    <div class=\"grid__item large--one-third medium--one-third\">\r\n        <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/1170\/8098\/t\/2\/assets\/b5.png\" alt=\"banner\">\r\n    <\/div>\r\n<\/div>\r\n\r\n<\/div>",
+    "social_facebook_link": "",
+    "social_twitter_link": "",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_use_image": true,
+          "logo": "shopify:\/\/shop_images\/logo-pink.png",
+          "logo_maxwidth": 200
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1511337909292": {
+            "type": "payment_image",
+            "settings": {
+              "image": "",
+              "link": "#"
+            }
+          },
+          "1511337925667": {
+            "type": "payment_image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1511337941259": {
+            "type": "payment_image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1511337950103": {
+            "type": "payment_image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1511337958672": {
+            "type": "payment_image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1511337968671": {
+            "type": "payment_image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1511337909292",
+          "1511337925667",
+          "1511337941259",
+          "1511337950103",
+          "1511337958672",
+          "1511337968671"
+        ],
+        "settings": {
+          "newsletter_title": "Iscriviti alla newsletter",
+          "bg_newletter_footer": "#aa6d6d",
+          "enable_bg_newsletter": true,
+          "image_bg": "shopify:\/\/shop_images\/Fit_lady_Banner_870x402_c4eefc02-3fef-42f3-ae8b-ace2278066bc.jpg",
+          "footer_logo": "shopify:\/\/shop_images\/logo-pink.png",
+          "footer_contact_title": "Contatti",
+          "footer_contact_content": "Hai bisogno di aiuto per scegliere il prodotto più adatto alle tue esigenze?\n<br>Per qualsiasi domanda non esitare a contattarci \n<ul class=\"contact_footer\">\n<li>\n<i class=\"a-location\"> <\/i>\nIl Quadrifoglio, Via Emilia Interna 63, 48014 Castelbolognese (RA)\n<\/li>\n<li>\n<i class=\"a-mobile\"> <\/i>\n<span> +39 0546 55709<\/span>\n<\/li>\n<li>\n<i class=\"a-email\"> <\/i>\nsupporto@ilquadrifoglioerboristeria.it<\/li>\n<\/ul>",
+          "footer_openning_title": "Orari di apertura",
+          "footer_openning_content": "Lunedì - Sabato : <br>\n<span>8.30 am - 12.30 pm<\/span> <br>\nGiovedì pomeriggio : <br>\n<span>CHIUSO<\/span>",
+          "footer_menu_1_title": "Infomazioni",
+          "footer_menu_1": "",
+          "footer_menu_2_title": "Il mio account",
+          "footer_menu_2": "",
+          "footer_social_content": "<h4>SEGUICI SU<\/h4>\n<div class=\"socials_box\">\n<a href=\"#\"><i class=\"icon icon-google\"><\/i><\/a>\n<a href=\"#\"><i class=\"icon icon-twitter\"><\/i><\/a>\n<a href=\"#\"><i class=\"icon icon-facebook\"><\/i><\/a>\n<a href=\"#\"><i class=\"icon icon-pinterest\"><\/i><\/a>\n<a href=\"#\"><i class=\"icon icon-rss\"><\/i><\/a>\n<\/div>",
+          "footer_image": "",
+          "copyright_content": "Copyright © 2017 Beauty Store."
+        }
+      },
+      "1511321757318": {
+        "type": "section-banner-1-col",
+        "disabled": true,
+        "blocks": {
+          "1511321757318-0": {
+            "type": "banner",
+            "settings": {
+              "banner_img": "",
+              "banner_url": "",
+              "effect_hover_img": "effect-v5"
+            }
+          }
+        },
+        "block_order": [
+          "1511321757318-0"
+        ],
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": ""
+        }
+      },
+      "1511323089247": {
+        "type": "section-banner-2-col",
+        "disabled": true,
+        "blocks": {
+          "1511323089247-0": {
+            "type": "banner",
+            "settings": {
+              "banner_img": "",
+              "banner_url": "shopify:\/\/products\/copy-of-smashbox-always-on-matte-liquid-lipstick",
+              "effect_hover_img": "effect-v5"
+            }
+          },
+          "1511323089247-1": {
+            "type": "banner",
+            "settings": {
+              "banner_img": "",
+              "banner_url": "shopify:\/\/products\/benefit-cosmetics-volumizing-mascara",
+              "effect_hover_img": "effect-v5"
+            }
+          }
+        },
+        "block_order": [
+          "1511323089247-0",
+          "1511323089247-1"
+        ],
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": ""
+        }
+      },
+      "1511324400458": {
+        "type": "section-product-tab",
+        "disabled": true,
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": "",
+          "tab_title": "OUR PRODUCTS",
+          "tab_num": "5",
+          "tab_limit": "5",
+          "tab_title_1": "All Product",
+          "tab_collection_1": "",
+          "tab_title_2": "Bestseller",
+          "tab_collection_2": "",
+          "tab_title_3": "New Arrivals",
+          "tab_collection_3": "",
+          "tab_title_4": "Sale!",
+          "tab_collection_4": ""
+        }
+      },
+      "1511332177509": {
+        "type": "section-product-featured",
+        "disabled": true,
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": "",
+          "product_featured_title": "POPULAR PRODUCTS",
+          "product_featured_collection": "",
+          "product_featured_num": "5",
+          "product_featured_limit": "5"
+        }
+      },
+      "1511332732861": {
+        "type": "section-product-widget-3",
+        "disabled": true,
+        "blocks": {
+          "1511332732861-0": {
+            "type": "list",
+            "settings": {
+              "widget_product_title": "All product",
+              "widget_product_collection": "cosmesi-viso",
+              "widget_product_limit": "3"
+            }
+          },
+          "1511332732861-1": {
+            "type": "list",
+            "settings": {
+              "widget_product_title": "Bestseller",
+              "widget_product_collection": "cura-persona",
+              "widget_product_limit": "3"
+            }
+          },
+          "1511332732861-2": {
+            "type": "list",
+            "settings": {
+              "widget_product_title": "New arrivals",
+              "widget_product_collection": "cosmetica-funzionale",
+              "widget_product_limit": "3"
+            }
+          }
+        },
+        "block_order": [
+          "1511332732861-0",
+          "1511332732861-1",
+          "1511332732861-2"
+        ],
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": ""
+        }
+      },
+      "1511332800112": {
+        "type": "section-banner-1-col",
+        "disabled": true,
+        "blocks": {
+          "1511332800112-0": {
+            "type": "banner",
+            "settings": {
+              "banner_img": "",
+              "banner_url": "",
+              "effect_hover_img": "effect-v5"
+            }
+          }
+        },
+        "block_order": [
+          "1511332800112-0"
+        ],
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": ""
+        }
+      },
+      "1511333236645": {
+        "type": "section-categories",
+        "disabled": true,
+        "blocks": {
+          "1511508743629": {
+            "type": "Grid_Categori",
+            "settings": {
+              "collections_enable": true,
+              "bg_collection": "#9fa8da",
+              "collection": ""
+            }
+          },
+          "1511508756349": {
+            "type": "Grid_Categori",
+            "settings": {
+              "collections_enable": true,
+              "bg_collection": "#80cbc4",
+              "collection": ""
+            }
+          },
+          "1511508811644": {
+            "type": "Grid_Categori",
+            "settings": {
+              "collections_enable": true,
+              "bg_collection": "#ffab91",
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1511508743629",
+          "1511508756349",
+          "1511508811644"
+        ],
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": "",
+          "grid_item": "3"
+        }
+      },
+      "1511334437143": {
+        "type": "section-brand",
+        "blocks": {
+          "1511334449156": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Aboca.gif",
+              "link": ""
+            }
+          },
+          "1511334456988": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AlfaOmega.gif",
+              "link": ""
+            }
+          },
+          "1511334463020": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Australian-Bush-Flower.gif",
+              "link": ""
+            }
+          },
+          "1511334467971": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Biosline.gif",
+              "link": ""
+            }
+          },
+          "1511334473020": {
+            "type": "logo_image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1511334495765": {
+            "type": "logo_image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1511334503067": {
+            "type": "logo_image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1511334510476": {
+            "type": "logo_image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1511334449156",
+          "1511334456988",
+          "1511334463020",
+          "1511334467971",
+          "1511334473020",
+          "1511334495765",
+          "1511334503067",
+          "1511334510476"
+        ],
+        "settings": {
+          "margin_top": "20",
+          "margin_bottom": "",
+          "brand_grid_item": "6",
+          "title": "I nostri marchi",
+          "bg_color": "#bd3434"
+        }
+      },
+      "1511335438536": {
+        "type": "section-slider",
+        "blocks": {
+          "1511335451197": {
+            "type": "Slide_image",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/zaffer_870x402_2758dcd7-dfd6-4ffd-8d0e-255e1a7357f7.jpg",
+              "slider_txt0": "",
+              "slider_txt1": "",
+              "slider_txt2": "",
+              "slider_btn1": "",
+              "slider_url_btn1": "https:\/\/il-quadrifoglio.myshopify.com\/collections\/newest-products\/products\/adipe-zaffer-dietalinea",
+              "text_alignment": "center",
+              "slide_effect": "fadeIn"
+            }
+          },
+          "1511335545479": {
+            "type": "Slide_image",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/Fit_lady_Banner_870x402_c4eefc02-3fef-42f3-ae8b-ace2278066bc.jpg",
+              "slider_txt0": "",
+              "slider_txt1": "",
+              "slider_txt2": "",
+              "slider_btn1": "",
+              "slider_url_btn1": "#",
+              "text_alignment": "center",
+              "slide_effect": "bounceInDown"
+            }
+          },
+          "1511335555517": {
+            "type": "Slide_image",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/lilla_870x402_8c6ba663-24e9-48b5-8cff-ed691fbabf5f.jpg",
+              "slider_txt0": "",
+              "slider_txt1": "",
+              "slider_txt2": "",
+              "slider_btn1": "",
+              "slider_url_btn1": "#",
+              "text_alignment": "center",
+              "slide_effect": "bounceInDown"
+            }
+          },
+          "1522919009227": {
+            "type": "Slide_image",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/indaco_870x402_cbc8969b-7592-4c50-bb07-b5a0f703b14f.jpg",
+              "slider_txt0": "",
+              "slider_txt1": "",
+              "slider_txt2": "",
+              "slider_btn1": "",
+              "slider_url_btn1": "#",
+              "text_alignment": "left",
+              "slide_effect": "bounceInDown"
+            }
+          }
+        },
+        "block_order": [
+          "1511335451197",
+          "1511335545479",
+          "1511335555517",
+          "1522919009227"
+        ],
+        "settings": {
+          "vertical-menu-enable": true,
+          "vertical-menu-title": "Sintomi",
+          "vertical-menu": "sidebar-menu",
+          "slide_carousel_autoplay": "7000"
+        }
+      },
+      "section-collection": {
+        "type": "section-collection",
+        "settings": {
+          "nb_column": "4",
+          "nb_per_page": "12",
+          "product_show_swatch": false
+        }
+      },
+      "section-product": {
+        "type": "section-product",
+        "settings": {
+          "nb_thumbnail_visible": "4",
+          "show_product_review": true,
+          "show_product_swatch": true,
+          "show_product_short_des": true,
+          "show_product_share_this": true,
+          "show_product_next_pre": true,
+          "show_shipping_tab": true,
+          "shipping_tab_title": "Shipping and Return",
+          "shipping_tab_content": "",
+          "show_size_chart_tab": true,
+          "size_chart_title": "Size Chart",
+          "size_chart_img": "",
+          "related_col": "4",
+          "related_limit": "12"
+        }
+      },
+      "section-contact": {
+        "type": "section-contact",
+        "settings": {
+          "contact_box_1": "123 Sky Tower, West 21th Street,<br> Suite 721, NY",
+          "contact_box_i1": "map-marker",
+          "contact_box_2": "+844 123 456 789<br> +844 123 456 789",
+          "contact_box_i2": "phone-square",
+          "contact_box_3": "contact@company.com<br> info@company.com",
+          "contact_box_i3": "envelope",
+          "contact_map": true,
+          "embed_code": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3023.9430831617974!2d-73.84385868412926!3d40.719269445106846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2609e1c08e7ad%3A0x74947fc3a4d8af6f!2s109-1+72nd+Rd%2C+Forest+Hills%2C+NY+11375%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1458377830375\" width=\"1170\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen=\"\"><\/iframe>"
+        }
+      },
+      "about-template": {
+        "type": "about-template",
+        "settings": {
+          "about2_title": "About",
+          "about2_content": "Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?",
+          "about3_title": "Vision",
+          "about3_content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "about4_title": "Mission",
+          "about4_content": "This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet..."
+        }
+      },
+      "1522921099406": {
+        "type": "section-product-featured",
+        "settings": {
+          "margin_top": "30",
+          "margin_bottom": "",
+          "product_featured_title": "Novita'",
+          "product_featured_collection": "novita",
+          "product_featured_num": "4",
+          "product_featured_limit": "4"
+        }
+      },
+      "section-blog": {
+        "type": "section-blog",
+        "settings": {
+          "recentblog_enable": false,
+          "blog_recent_limit": "",
+          "tagsblog_enable": false,
+          "categoryblog_enable": false,
+          "ads_enable": false,
+          "ads_img": "",
+          "ads_block_url": ""
+        }
+      },
+      "1522959458347": {
+        "type": "section-blog",
+        "settings": {
+          "recentblog_enable": true,
+          "blog_recent_limit": "",
+          "tagsblog_enable": true,
+          "categoryblog_enable": true,
+          "ads_enable": true,
+          "ads_img": "",
+          "ads_block_url": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "1511335438536",
+      "1511333236645",
+      "1511324400458",
+      "1511323089247",
+      "1511332177509",
+      "1511321757318",
+      "1511332732861",
+      "1511332800112",
+      "1522921099406",
+      "1522959458347",
+      "1511334437143"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "ajax_cart_method": "drawer",
+      "cart_notes_enable": true,
+      "color_body_bg": "#fff",
+      "color_body_text": "#333333",
+      "color_borders": "#e5e5e5",
+      "color_footer_bg": "#f2f2f2",
+      "color_footer_social_link": "#bbbbbb",
+      "color_footer_text": "#636363",
+      "color_primary": "#747474",
+      "color_secondary": "#bbb",
+      "favicon_enable": false,
+      "footer_newsletter_enable": true,
+      "footer_social_enable": true,
+      "logo_use_image": false,
+      "social_facebook_link": "",
+      "social_twitter_link": ""
+    }
+  }
+}

@@ -1,0 +1,50 @@
+//============================================
+// Layout
+//============================================
+
+
+// Section
+//============================================
+
+.main-content .shopify-section {
+  padding-top: $space-half;
+  padding-bottom: $space-half;
+}
+
+.l-section-first{
+  padding-top: $space;
+}
+
+.l-section-last{
+  padding-bottom: $space-double;
+}
+.l-sectionFull{
+  margin-top: $space;
+  margin-bottom: $space;
+}
+
+.l-sectionFull-first{
+  margin-top: 0;
+}
+.l-sectionFull-last{
+  margin-bottom: 0;
+}
+.l-sectionFull + .l-sectionFull{
+  margin-top: -$space;
+}
+
+
+.l-sectionInner{
+  padding-top: $space-double;
+  padding-bottom: $space-double;
+}
+
+.l-section-subMenu + .l-section-headerImg{
+  margin-top: -$space-half;
+}
+
+.subNav + .l-section-headerImg{
+  margin-top: -$space;
+}
+
+
