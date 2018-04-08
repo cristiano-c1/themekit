@@ -26,7 +26,10 @@
                     <h4 class="entry-title">
                       <a href="{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a>
                     </h4>
-                    <div class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>{{article.published_at | date: "%B %d, %Y" }}</div>
+                    <div class="date">
+                      <i class="fa fa-clock-o" aria-hidden="true"></i>
+                      {{article.published_at | date: "%d %B, %Y" | replace: 'January', 'Gennaio' | replace: 'February', 'Febbraio' | replace: 'March', 'Marzo' | replace: 'April', 'Aprile' | replace: 'May', 'Maggio' | replace: 'June', 'Giugno' | replace: 'July', 'Luglio' | replace: 'August', 'Agosto' | replace: 'September', 'Settembre' | replace: 'October', 'Ottobre' | replace: 'November', 'Novembre' | replace: 'December', 'Dicembre' | replace: 'Monday', 'Lunedì ' | replace: 'Tuesday', 'Martedi ' | replace: 'Wednesday', 'Mercoledi ' | replace: 'Thursday', 'Giovedi ' | replace: 'Friday', 'Venerdi ' | replace: 'Saturday', 'Sabato ' | replace: 'Sunday', 'Domenica '}}
+                    </div>
                     <p class="des small--hide">{{ article.content | strip_html | truncatewords: 15 }}</p>
                     {% if section.settings.text_blog_button != blank %}
                     <a href="{{ article.url }}" class="btn btn--secondary"> {{ section.settings.text_blog_button }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>

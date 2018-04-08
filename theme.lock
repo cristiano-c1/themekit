@@ -222,7 +222,7 @@ config/settings_data.json:
 config/settings_schema.json:
   development: 2018-04-07T22:20:15+02:00   933826aae379e45d4e2ca0d295d9d5e7
 layout/theme.liquid:
-  development: 2018-04-07T22:48:50+02:00   b19fd6b73579e455de31ffc17fa5a299
+  development: 2018-04-08T22:22:22+02:00   f096422f7277524064af9ce5775f74ba
 locales/de.json:
   development: 2018-04-04T16:41:47+02:00   c941315d377de38e2e42af28be3da5ed
 locales/en.default.json:
@@ -248,7 +248,7 @@ sections/section-banner-1-col.liquid:
 sections/section-banner-2-col.liquid:
   development: 2018-04-04T16:41:33+02:00   1cdaa793b75879c013a3549881a1a173
 sections/section-blog.liquid:
-  development: 2018-04-08T19:05:58+02:00   a0721d412fc78144b8f20aa5a4b8d6ee
+  development: 2018-04-08T22:29:59+02:00   5a031cf20e94bb7e84c174e55f702c84
 sections/section-brand.liquid:
   development: 2018-04-08T04:08:06+02:00   eb9e8601444016d3114475c21e3c5083
 sections/section-categories.liquid:
