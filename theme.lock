@@ -262,11 +262,11 @@ sections/section-contact.liquid:
 sections/section-product-featured.liquid:
   development: 2018-04-08T03:29:56+02:00   f7f0e34eb458f2f49a913a8b7172b539
 sections/section-product-tab.liquid:
-  development: 2018-04-04T16:41:33+02:00   bf3b273e71fe6becbd861927936ea954
+  development: 2018-04-10T23:26:12+02:00   f8436b87d6ada803f8b8fa21d11d2501
 sections/section-product-widget-3.liquid:
   development: 2018-04-04T16:41:34+02:00   e7ba6c2ad6f23f49ac73f51f3261555b
 sections/section-product.liquid:
-  development: 2018-04-07T18:21:27+02:00   f170a9bc438fa3ccbb3d39f345fffe5c
+  development: 2018-04-10T23:29:29+02:00   c49927cedd584d8dde9d84d65359f808
 sections/section-slider.liquid:
   development: 2018-04-07T23:47:45+02:00   c161982a8274ec482e944e5800b20c58
 snippets/add-wishlist.liquid:
