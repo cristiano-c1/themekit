@@ -216,6 +216,12 @@ ul.child li a:after {
   background-size: cover;
   background-position: center center; }
 
+.product-container, .product-style-1 {
+  margin-bottom: 30px; }
+
+.filter-block ul.box-grid-stype li.active a {
+  color: #4b852c; }
+
 .widget .widget__title {
   margin-top: 0; }
 

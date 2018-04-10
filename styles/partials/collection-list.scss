@@ -8,5 +8,9 @@
 .product-thumbnail img {
 }
 .product-container, .product-style-1 {
+  margin-bottom:30px;
+}
 
+.filter-block ul.box-grid-stype li.active a {
+  color: $primary-dark
 }

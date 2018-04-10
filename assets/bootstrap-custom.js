@@ -223,7 +223,7 @@ $(document).ready(function() {
     }
     return true;
   });
-  
+
 
   initSwatch();
 

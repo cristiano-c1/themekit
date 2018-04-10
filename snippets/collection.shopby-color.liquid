@@ -19,7 +19,7 @@
         {% assign tag_value = tag | handleize %}
         <input type="checkbox" value="{{ tag_value }}" {% if current_tags contains tag %}checked{% endif %}/>
         <a href="javascript:void(0)" title="{{tag}}">
-          <span class="color {{tag_value}}"></span>
+          {{tag_value}}
         </a>
       </li>
       {% endif %}

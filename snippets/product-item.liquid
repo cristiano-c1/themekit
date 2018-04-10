@@ -24,14 +24,7 @@
 		<div class="product-image ">
 			<div class="product-thumbnail">
 				<a href="{{ product.url | within: collection }}" title="">
-					<img class="product-featured-image" src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
-
-					{% for image in product.images %}
-					{% if forloop.last == true %}
-					<img class="back-img" src="{{ image.src | product_img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
-					{%endif%}
-					{% endfor %}
-
+					<img class="product-featured-image" src="{{ product.featured_image.src | img_url: '250x200' }}" alt="{{ product.featured_image.alt | escape }}">
 				</a>
 			</div><!-- /.product-thumbnail -->
 			{% if sold_out%}

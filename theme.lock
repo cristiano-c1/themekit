@@ -40,7 +40,7 @@ assets/bg-body.jpg:
 assets/bg-sale.png:
   development: 2018-04-04T16:41:37+02:00   2226277530805ce732a080196a4b0b88
 assets/bootstrap-custom.js:
-  development: 2018-04-04T16:41:37+02:00   1efa0064c9da24f3702abf0b3a884bb7
+  development: 2018-04-10T22:31:30+02:00   6214cba52f6431abeadd9425642114ac
 assets/bootstrap.min.css:
   development: 2018-04-04T16:41:37+02:00   d622a9f9bb143f63f737b31a2c349e50
 assets/brand_logo_1.jpg:
@@ -206,7 +206,7 @@ assets/tes-1.jpg:
 assets/tes-2.jpg:
   development: 2018-04-04T16:41:46+02:00   bd645720f08debc76d8ffc60bb3c1e2c
 assets/theme.css:
-  development: 2018-04-08T22:53:54+02:00   57f53a34659e5e8d8fe4823d9d6af2b2
+  development: 2018-04-10T22:53:56+02:00   7cefb4f609a5e5e6f35112081d74251e
 assets/theme.css.map:
   development: 2018-04-07T23:15:39+02:00   7ed9c78ba2bab83ca16ff9ed9d504f90
 assets/timber.js.liquid:
@@ -256,7 +256,7 @@ sections/section-categories.liquid:
 sections/section-collection-list.liquid:
   development: 2018-04-08T21:40:35+02:00   9428a87245fc02416c38a701e0b775d1
 sections/section-collection.liquid:
-  development: 2018-04-08T21:33:33+02:00   e4727eb039a5382012aa35dbb22c59fc
+  development: 2018-04-10T21:57:59+02:00   e4727eb039a5382012aa35dbb22c59fc
 sections/section-contact.liquid:
   development: 2018-04-04T16:41:33+02:00   ca883a90f03e2c7a8afbb59f5eece321
 sections/section-product-featured.liquid:
@@ -288,7 +288,7 @@ snippets/collection-sidebar.liquid:
 snippets/collection-sorting.liquid:
   development: 2018-04-04T16:41:47+02:00   392daee58e95f19eaf3921ca4cbcdd71
 snippets/collection.shopby-color.liquid:
-  development: 2018-04-04T16:41:47+02:00   cdce5992806afddef4e054c72b46796f
+  development: 2018-04-10T22:51:42+02:00   7005c8834c82a2fdf9e81ef75febdb6f
 snippets/collection.shopby-price.liquid:
   development: 2018-04-04T16:41:48+02:00   55c2846cbeac070bd93a4c57ac8d9fe3
 snippets/collection.wishlist.liquid:
@@ -318,7 +318,7 @@ snippets/product-grid-item.liquid:
 snippets/product-item-featured.liquid:
   development: 2018-04-04T16:41:48+02:00   e800e2d4ef430865aa0d818f214a1d27
 snippets/product-item.liquid:
-  development: 2018-04-04T16:41:48+02:00   6fe8a5eb050f0b7888f2c5a42f880b98
+  development: 2018-04-10T22:39:15+02:00   2ee07103a9be28e0b89b17433713af69
 snippets/product-quick-view.liquid:
   development: 2018-04-07T17:32:36+02:00   3ebd135d05d98a898c115a5c7a3863ff
 snippets/related-products.liquid:
