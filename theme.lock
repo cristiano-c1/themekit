@@ -244,7 +244,7 @@ locales/pt-PT.json:
 sections/about-template.liquid:
   development: 2018-04-04T16:41:33+02:00   a5c4582e5320cdc7f334dca5675473b9
 sections/footer.liquid:
-  development: 2018-04-08T19:58:05+02:00   0976510d84a4aa6a2268abb392bf4d1d
+  development: 2018-05-18T18:51:22+02:00   10a145f5ced14b64fb2a8e18d1e9746c
 sections/header.liquid:
   development: 2018-04-13T15:32:41+02:00   25dab4deb41ceb2767abb436df27738b
 sections/section-banner-1-col.liquid:
