@@ -297,6 +297,16 @@
       });
     {% endif %}
   </script>
+  <script>
+    var checkboxes = $(".newsletter input[type='checkbox']"),
+    submitButt = $(".newsletter button[type='submit']");
+
+    checkboxes.click(function() {
+        submitButt.attr("disabled", !checkboxes.is(":checked"));
+    });
+
+
+  </script>
 
   {% if settings.ajax_cart_method == "drawer" %}
     {{ 'handlebars.min.js' | asset_url | script_tag }}
@@ -324,7 +334,6 @@
 
 
   {{ 'quickview.js' | asset_url | script_tag }}
-  {{ 'wish-list.js' | asset_url | script_tag }}
    {{ 'collection.js' | asset_url | script_tag }}
 
   {% include 'product-quick-view' %}

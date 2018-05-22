@@ -11,13 +11,17 @@
 			<h4 class="title">{{section.settings.newsletter_title}}</h4>
 			<form action="https://myshopify.us12.list-manage.com/subscribe/post?u=41f2ca8c5ae851fc807c4be50&amp;id=22daa5e835" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="form-horizontal">
 				<div class="newsletter-form">
-				<input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" name="EMAIL" id="mail" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}">
-				<button class="btn btn-submit" value="{{ 'general.newsletter_form.submit' | t }}" name="subscribe" type="submit">
-					<i class="fa fa-envelope-o"></i>
-					{{ 'general.newsletter_form.submit' | t }}
-				</button>
-
+  				<input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" name="EMAIL" id="mail" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}">
+  				<button class="btn btn-submit" value="{{ 'general.newsletter_form.submit' | t }}" name="subscribe" type="submit" disabled>
+  					<i class="fa fa-envelope-o"></i>
+  					{{ 'general.newsletter_form.submit' | t }}
+  				</button>
+          <br>
+          <span>
+            <label><input type="checkbox"  onchange="document.getElementById('sendNewSms').disabled = !this.checked;" /> Ho preso visione della <a href="/pages/privacy" target="_blank">privacy policy</a> e presto il mio consenso all'invio di comunicazioni di tipo informativo e commerciale</label>
+          </span>
 				</div>
+
 			</form>
 		</div>
 	</div>

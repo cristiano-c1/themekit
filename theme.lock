@@ -208,7 +208,7 @@ assets/tes-1.jpg:
 assets/tes-2.jpg:
   development: 2018-04-04T16:41:46+02:00   bd645720f08debc76d8ffc60bb3c1e2c
 assets/theme.css:
-  development: 2018-04-10T22:53:56+02:00   7cefb4f609a5e5e6f35112081d74251e
+  development: 2018-05-22T20:03:35+02:00   a01be542df151f200126d64150470e2d
 assets/theme.css.map:
   development: 2018-04-07T23:15:39+02:00   7ed9c78ba2bab83ca16ff9ed9d504f90
 assets/timber.js.liquid:
@@ -226,7 +226,7 @@ config/settings_data.json:
 config/settings_schema.json:
   development: 2018-04-07T22:20:15+02:00   933826aae379e45d4e2ca0d295d9d5e7
 layout/theme.liquid:
-  development: 2018-04-08T22:22:22+02:00   f096422f7277524064af9ce5775f74ba
+  development: 2018-05-22T20:56:51+02:00   667b05be74db4e4a6349f82539ed4dbc
 locales/de.json:
   development: 2018-04-04T16:41:47+02:00   c941315d377de38e2e42af28be3da5ed
 locales/en.default.json:
@@ -244,9 +244,9 @@ locales/pt-PT.json:
 sections/about-template.liquid:
   development: 2018-04-04T16:41:33+02:00   a5c4582e5320cdc7f334dca5675473b9
 sections/footer.liquid:
-  development: 2018-05-18T18:51:22+02:00   10a145f5ced14b64fb2a8e18d1e9746c
+  development: 2018-05-22T20:02:25+02:00   18a1698dd8de09c5b3f5655d73dee114
 sections/header.liquid:
-  development: 2018-04-13T15:32:41+02:00   25dab4deb41ceb2767abb436df27738b
+  development: 2018-05-22T17:53:43+02:00   31322d335f27ac827fa372fac8e16658
 sections/section-banner-1-col.liquid:
   development: 2018-04-04T16:41:33+02:00   1afbe7ff237f962741b6b3c7b667aa9c
 sections/section-banner-2-col.liquid:
@@ -261,8 +261,10 @@ sections/section-collection-list.liquid:
   development: 2018-04-08T21:40:35+02:00   9428a87245fc02416c38a701e0b775d1
 sections/section-collection.liquid:
   development: 2018-04-10T21:57:59+02:00   e4727eb039a5382012aa35dbb22c59fc
+sections/section-contact-noform.liquid:
+  development: 2018-05-22T18:22:28+02:00   02d366e9aedcd090b90e5974aea366fe
 sections/section-contact.liquid:
-  development: 2018-04-04T16:41:33+02:00   ca883a90f03e2c7a8afbb59f5eece321
+  development: 2018-05-22T18:07:28+02:00   3acd0c4596a5c56fc8b568b4cd09d4e0
 sections/section-product-featured.liquid:
   development: 2018-04-08T03:29:56+02:00   f7f0e34eb458f2f49a913a8b7172b539
 sections/section-product-tab.liquid:
@@ -270,11 +272,11 @@ sections/section-product-tab.liquid:
 sections/section-product-widget-3.liquid:
   development: 2018-04-04T16:41:34+02:00   e7ba6c2ad6f23f49ac73f51f3261555b
 sections/section-product.liquid:
-  development: 2018-04-10T23:29:29+02:00   c49927cedd584d8dde9d84d65359f808
+  development: 2018-05-18T20:31:31+02:00   a04f2ea05b805e9cf1a2f75df28c913a
 sections/section-slider.liquid:
-  development: 2018-04-07T23:47:45+02:00   c161982a8274ec482e944e5800b20c58
+  development: 2018-05-22T20:27:58+02:00   f53b716a8fc3ab5a8316fd897d97539d
 snippets/add-wishlist.liquid:
-  development: 2018-04-04T16:41:47+02:00   08b4f76b8259a2532cebd7511b7bee4e
+  development: 2018-05-18T19:47:21+02:00   08b4f76b8259a2532cebd7511b7bee4e
 snippets/addthis.liquid:
   development: 2018-04-04T16:41:47+02:00   28d17fca0d326d622879996a7a82fa63
 snippets/ajax-cart-template.liquid:
@@ -322,7 +324,7 @@ snippets/product-grid-item.liquid:
 snippets/product-item-featured.liquid:
   development: 2018-04-04T16:41:48+02:00   e800e2d4ef430865aa0d818f214a1d27
 snippets/product-item.liquid:
-  development: 2018-04-10T22:39:15+02:00   2ee07103a9be28e0b89b17433713af69
+  development: 2018-05-18T19:49:32+02:00   2ee07103a9be28e0b89b17433713af69
 snippets/product-quick-view.liquid:
   development: 2018-04-07T17:32:36+02:00   3ebd135d05d98a898c115a5c7a3863ff
 snippets/related-products.liquid:
@@ -354,7 +356,7 @@ snippets/verticalmenu.liquid:
 snippets/widget-product.liquid:
   development: 2018-04-04T16:41:49+02:00   c8ebde923337dcd575319e5b14a69184
 snippets/wishlist-item.liquid:
-  development: 2018-04-04T16:41:49+02:00   997b15f9b3af402b8a3534332ae54a78
+  development: 2018-05-18T19:47:14+02:00   a894defe0afdc2ee3d327e57d22b6db4
 snippets/wishlist-product.liquid:
   development: 2018-04-04T16:41:49+02:00   518fd7452d712710918a95d857467edb
 snippets/wishlist-product.liquid.bak:

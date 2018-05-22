@@ -9,15 +9,18 @@
     		            {% for block in section.blocks %}
     						{% assign url = settings[_url] %}
     						<div class="slider_element">
+                  {% if block.settings.slider_url_btn1 != blank %}
+                    <a style="display:block" href="{{ block.settings.slider_url_btn1 }}">
+                  {% endif %}
     							{% if block.settings.slide_image != blank %}
-    	                      		{{ block.settings.slide_image | img_url: 'master' | img_tag: block.settings.slide_image.alt , 'Slide' }}
-    	                    	{% endif %}
+                  		{{ block.settings.slide_image | img_url: 'master' | img_tag: block.settings.slide_image.alt , 'Slide' }}
+                	{% endif %}
     							<div class="slider-text small--hide text-{{block.settings.text_alignment}}">
     								<div class="txt0 des wow {{block.settings.slide_effect}}" data-wow-duration="1s">{{block.settings.slider_txt0}}</div>
     								<div class="txt1 des wow {{block.settings.slide_effect}}" data-wow-duration="1s">{{block.settings.slider_txt1}}</div>
     								<div class="txt2 des wow {{block.settings.slide_effect}}" data-wow-duration="2s">{{block.settings.slider_txt2}}</div>
-    								{% if block.settings.slider_btn1 != blank %}
-    									<div class="des wow {{block.settings.slide_effect}}" data-wow-duration="3s"><a href="{{ block.settings.slider_url_btn1 }}" class="btn btn--secondary">{{ block.settings.slider_btn1 }}</a></div>
+    								{% if block.settings.slider_url_btn1 != blank %}
+    									</a>
     								{% endif %}
     							</div>
     						</div>

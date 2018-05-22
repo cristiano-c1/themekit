@@ -31,5 +31,24 @@
   font-family: Dosis, serif;
   letter-spacing: 1px;
   font-style: normal;
-  font-weight: bold
+  font-weight: bold;
+  vertical-align: top;
+}
+.site-footer .site-footer__top .newsletter .newsletter-form span {
+  max-width: 640px;
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+}
+.site-footer .site-footer__top .newsletter .newsletter-form input[type='checkbox'] {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 20px 0;
+  display: inline-block;
+  float: left
+}
+.site-footer .site-footer__top .newsletter .newsletter-form label {
+  font-weight: normal;
+  cursor: pointer;
+  text-transform: none
 }
