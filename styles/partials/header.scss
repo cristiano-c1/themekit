@@ -64,3 +64,13 @@
   padding-top: 0;
   height: auto;
 }
+.site-nav {
+  width: 100%;
+}
+.site-nav li:last-child{
+  float: right
+}
+
+.site-nav li li:last-child{
+  float:none
+}

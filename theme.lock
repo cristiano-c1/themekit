@@ -208,7 +208,7 @@ assets/tes-1.jpg:
 assets/tes-2.jpg:
   development: 2018-04-04T16:41:46+02:00   bd645720f08debc76d8ffc60bb3c1e2c
 assets/theme.css:
-  development: 2018-05-22T20:03:35+02:00   a01be542df151f200126d64150470e2d
+  development: 2018-05-27T19:04:36+02:00   0bbc02296d5fd47e8d802a8daa87d0f9
 assets/theme.css.map:
   development: 2018-04-07T23:15:39+02:00   7ed9c78ba2bab83ca16ff9ed9d504f90
 assets/timber.js.liquid:
@@ -226,7 +226,7 @@ config/settings_data.json:
 config/settings_schema.json:
   development: 2018-04-07T22:20:15+02:00   933826aae379e45d4e2ca0d295d9d5e7
 layout/theme.liquid:
-  development: 2018-05-22T20:56:51+02:00   667b05be74db4e4a6349f82539ed4dbc
+  development: 2018-05-27T20:02:35+02:00   84b0dd9f3ffa1d587a7d88cc857859a6
 locales/de.json:
   development: 2018-04-04T16:41:47+02:00   c941315d377de38e2e42af28be3da5ed
 locales/en.default.json:
@@ -244,7 +244,7 @@ locales/pt-PT.json:
 sections/about-template.liquid:
   development: 2018-04-04T16:41:33+02:00   a5c4582e5320cdc7f334dca5675473b9
 sections/footer.liquid:
-  development: 2018-05-22T20:02:25+02:00   18a1698dd8de09c5b3f5655d73dee114
+  development: 2018-05-27T18:23:59+02:00   18a1698dd8de09c5b3f5655d73dee114
 sections/header.liquid:
   development: 2018-05-22T17:53:43+02:00   31322d335f27ac827fa372fac8e16658
 sections/section-banner-1-col.liquid:
@@ -260,9 +260,9 @@ sections/section-categories.liquid:
 sections/section-collection-list.liquid:
   development: 2018-04-08T21:40:35+02:00   9428a87245fc02416c38a701e0b775d1
 sections/section-collection.liquid:
-  development: 2018-04-10T21:57:59+02:00   e4727eb039a5382012aa35dbb22c59fc
+  development: 2018-05-27T19:23:12+02:00   e4727eb039a5382012aa35dbb22c59fc
 sections/section-contact-noform.liquid:
-  development: 2018-05-22T18:22:28+02:00   02d366e9aedcd090b90e5974aea366fe
+  development: 2018-05-27T16:20:21+02:00   9d10ba785e7a770b4c1f14f24070d295
 sections/section-contact.liquid:
   development: 2018-05-22T18:07:28+02:00   3acd0c4596a5c56fc8b568b4cd09d4e0
 sections/section-product-featured.liquid:
@@ -342,7 +342,7 @@ snippets/search-autocomplete.liquid:
 snippets/search-bar.liquid:
   development: 2018-04-04T16:41:48+02:00   b0a8d51c728d1477185b5f7f7395b111
 snippets/sidebar-cat.liquid:
-  development: 2018-04-08T03:43:10+02:00   e79dd37b8497aabd1bb9f5b73d15c8fe
+  development: 2018-05-27T19:06:35+02:00   a7b3ee9f1b4db9dd7d030ed7e59ae952
 snippets/social-meta-tags.liquid:
   development: 2018-04-04T16:41:49+02:00   222a3f0d13a871f32574494f8de5c651
 snippets/swatch.liquid:
@@ -410,4 +410,4 @@ templates/product.liquid:
 templates/search.json.liquid:
   development: 2018-04-04T16:41:50+02:00   7889f4613d9ac54b37a10520c4469c63
 templates/search.liquid:
-  development: 2018-04-04T16:41:50+02:00   3179f3b2516a764d4b41c6d38785e076
+  development: 2018-05-27T16:11:08+02:00   748cae00c018850a9c7f4537b10645eb
